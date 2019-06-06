@@ -1,0 +1,20 @@
+.menu {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+}
+
+.menu__link {
+  color: $textColor;
+  transition: color .4s;
+  font-size: 12px;
+  font-family: $ralewayFont;
+  text-transform: uppercase;
+  line-height: 1.667;
+
+  &:hover,
+  &--active {
+    color: $accentColor;
+    text-decoration: none;
+  }
+}

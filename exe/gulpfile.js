@@ -1,14 +1,6 @@
 const gulp = require('gulp');
 const $ = require('gulp-load-plugins')();
 
-const versionConfig = {
-  'value': '%MDS%',
-  'append': {
-    'key': 'v',
-    'to': ['css', 'js'],
-  },
-}
-
 const path = {
   src: {
     html: './index.html',
@@ -28,8 +20,8 @@ gulp.task('styles', () => {
     .pipe($.sourcemaps.init())
     .pipe($.sass())
     .pipe($.autoprefixer())
-    .pipe($.sourcemaps.write())
     .pipe($.cleanCss())
+    .pipe($.sourcemaps.write())
     .pipe(gulp.dest(path.build.css))
 });
 
