@@ -18,9 +18,7 @@ gulp.task('styles', () => {
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.sass())
-    .pipe($.autoprefixer({
-      browsers: ['last 3 versions']
-    }))
+    .pipe($.autoprefixer())
     .pipe($.sourcemaps.write())
     .pipe($.cleanCss())
     .pipe(gulp.dest(path.build.css))

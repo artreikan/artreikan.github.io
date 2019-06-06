@@ -1,0 +1,21 @@
+/**
+ * Основные стили
+ **/
+
+html {
+	font-size: 16px;
+}
+
+body {
+	background: $bgColor;
+	font-family: 'Roboto', 'Arial', sans-serif;
+	overflow-wrap: break-word;
+	word-wrap: break-word;
+	min-width: 320px;
+}
+
+.container {
+	max-width: 1200px;
+	padding: 0 15px;
+	margin: 0 auto;
+}
