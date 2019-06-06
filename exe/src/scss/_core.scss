@@ -9,7 +9,7 @@ html {
 body {
 	background: $bgColor;
 	color: $white;
-	font-family: 'Roboto', 'Arial', sans-serif;
+	font-family: $robotoFont;
 	overflow-wrap: break-word;
 	word-wrap: break-word;
 	min-width: 320px;

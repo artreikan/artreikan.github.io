@@ -1,8 +1,17 @@
 const gulp = require('gulp');
 const $ = require('gulp-load-plugins')();
 
+const versionConfig = {
+  'value': '%MDS%',
+  'append': {
+    'key': 'v',
+    'to': ['css', 'js'],
+  },
+}
+
 const path = {
   src: {
+    html: './index.html',
     scss: './src/scss/**/*.scss',
     images: './src/img/*'
   },
@@ -28,12 +37,12 @@ gulp.task('images', () => {
   return gulp.src(path.src.images)
     .pipe($.imagemin())
     .pipe(gulp.dest(path.build.images))
-})
+});
 
 gulp.task('watch', () => {
   gulp.watch(path.src.scss, gulp.series('styles'));
   gulp.watch(path.src.images, gulp.series('images'));
-})
+});
 
 gulp.task('build', gulp.parallel('styles', 'images'));
 

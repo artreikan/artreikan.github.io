@@ -18,7 +18,8 @@
     "gulp-load-plugins": "^1.6.0",
     "gulp-plumber": "^1.2.1",
     "gulp-sass": "^4.0.2",
-    "gulp-sourcemaps": "^2.6.5"
+    "gulp-sourcemaps": "^2.6.5",
+    "gulp-version-number": "^0.2.4"
   },
   "browserslist": [
     "last 3 versions"
