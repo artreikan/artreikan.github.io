@@ -61,11 +61,17 @@
   }
 }
 
-@media (max-width: 680px) {
+@media (max-width: 768px) {
   .slider {
     background-position: left bottom;
   }
 
+  .slider__description {
+    color: lighten($textColor, 30%)
+  }
+}
+
+@media (max-width: 680px) {
   .slider__container {
     padding-top: 80px;
     padding-bottom: 80px;
