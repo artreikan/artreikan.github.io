@@ -10,7 +10,8 @@ const path = {
   build: {
     root: './dist',
     css: './dist/css',
-    images: './dist/img'
+    images: './dist/img',
+    svg: './dist/img/*.svg'
   },
 }
 
@@ -31,11 +32,23 @@ gulp.task('images', () => {
     .pipe(gulp.dest(path.build.images))
 });
 
+gulp.task('svg-sprite', () => {
+  return gulp.src(path.build.svg)
+    .pipe($.svgSprite({
+      mode: {
+        symbol: {
+          sprite: 'sprite.svg'
+        }
+      }
+    }))
+    .pipe(gulp.dest(`${path.build.images}`))
+})
+
 gulp.task('watch', () => {
   gulp.watch(path.src.scss, gulp.series('styles'));
   gulp.watch(path.src.images, gulp.series('images'));
 });
 
-gulp.task('build', gulp.parallel('styles', 'images'));
+gulp.task('build', gulp.parallel('styles', gulp.series('images', 'svg-sprite')));
 
-gulp.task('default', gulp.parallel('watch', 'styles', 'images'));
+gulp.task('default', gulp.parallel('watch', 'styles', gulp.series('images', 'svg-sprite')));

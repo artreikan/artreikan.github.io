@@ -113,13 +113,16 @@
   }
 
   .slider__buttons .btn--red {
-    margin-right: 0;
     margin-bottom: 20px;
+    margin-right: auto;
   }
 
   .slider__btn {
     display: block;
+    max-width: 70%;
     font-size: 12px;
+    margin-left: auto;
+    margin-right: auto;
   }
 }
 
