@@ -20,7 +20,9 @@ gulp.task('styles', () => {
     .pipe($.plumber())
     .pipe($.sourcemaps.init())
     .pipe($.sass())
-    .pipe($.autoprefixer())
+    .pipe($.autoprefixer({
+      grid: true
+    }))
     .pipe($.cleanCss())
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest(path.build.css))
