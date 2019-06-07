@@ -15,6 +15,17 @@ body {
 	min-width: 320px;
 }
 
+::selection {
+	background: $accentColor;
+	color: $white;
+}
+
+a,
+a:hover {
+	text-decoration: none;
+	color: $white;
+}
+
 .container {
 	max-width: 1200px;
 	padding: 0 15px;

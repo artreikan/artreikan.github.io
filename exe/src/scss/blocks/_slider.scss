@@ -1,0 +1,130 @@
+.slider {
+  background: url('../img/bg-man.jpg') center top no-repeat;
+  background-size: cover;
+}
+
+.slider__container {
+  padding-top: 255px;
+  padding-bottom: 255px;
+}
+
+.slider__info {
+  max-width: 580px;
+  margin-left: auto;
+}
+
+.slider__title {
+  color: $white;
+  text-transform: uppercase;
+  font-size: 80px;
+  font-family: $ralewayFont;
+  font-weight: bold;
+  line-height: 1;
+  margin-bottom: 20px;
+
+  &--small {
+    font-size: 43px;
+    display: block;
+  }
+
+  &--accented {
+    color: $accentColor;
+  }
+}
+
+.slider__description {
+  font-size: 18px;
+  font-family: $ralewayFont;
+  font-weight: bold;
+  text-transform: uppercase;
+  line-height: 1.333;
+  margin-bottom: 25px;
+}
+
+.slider__buttons .btn--red {
+  margin-right: 30px;
+}
+
+@media (max-width: 980px) {
+  .slider {
+    background-position: right center;
+  }
+
+  .slider__container {
+    padding-top: 150px;
+    padding-bottom: 150px;
+  }
+
+  .slider__info {
+    margin: 0 auto;
+    text-align: center;
+  }
+}
+
+@media (max-width: 680px) {
+  .slider__container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .slider__title {
+    font-size: 50px;
+
+    &--small {
+      font-size: 25px;
+    }
+  }
+
+  .slider__description {
+    font-size: 14px;
+  }
+
+  .slider__buttons .btn--red {
+    margin-right: 20px;
+  }
+}
+
+@media (max-width: 450px) {
+  .slider__container {
+    padding-top: 60px;
+    padding-bottom: 60px;
+  }
+
+  .slider__title {
+    font-size: 42px;
+
+    &--small {
+      font-size: 20px;
+    }
+  }
+
+  .slider__description {
+    font-size: 12px;
+  }
+
+  .slider__buttons .btn--red {
+    margin-right: 0;
+    margin-bottom: 20px;
+  }
+
+  .slider__btn {
+    display: block;
+    font-size: 12px;
+  }
+}
+
+@media (max-width: 360px) {
+  .slider__container {
+    padding-top: 40px;
+    padding-bottom: 40px;
+  }
+
+  .slider__title {
+    font-size: 32px;
+
+    &--small {
+      font-size: 16px;
+    }
+  }
+}
+

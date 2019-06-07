@@ -1,0 +1,33 @@
+.btn {
+  border-radius: 5px;
+  display: inline-block;
+  background: transparent;
+  padding: 12px 25px;
+  text-transform: uppercase;
+  font-size: 14px;
+  font-family: $ralewayFont;
+  font-weight: bold;
+  cursor: pointer;
+  box-shadow: none;
+  appearance: none;
+  border: 2px solid transparent;
+  transition: background $transitionDuration, border-color $transitionDuration;
+
+  &--red {
+    background: $accentColor;
+    color: $white;
+    
+    &:hover {
+      background: darken($accentColor, 10%);
+    }
+  }
+
+  &--bordered {
+    border-color: $white;
+
+    &:hover {
+      background: $accentColor;
+      border-color: $accentColor;
+    }
+  }
+}

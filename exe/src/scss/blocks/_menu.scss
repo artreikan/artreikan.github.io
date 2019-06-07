@@ -6,7 +6,7 @@
 
 .menu__link {
   color: $textColor;
-  transition: color .4s;
+  transition: color $transitionDuration;
   font-size: 12px;
   font-family: $ralewayFont;
   text-transform: uppercase;
@@ -15,6 +15,5 @@
   &:hover,
   &--active {
     color: $accentColor;
-    text-decoration: none;
   }
 }
