@@ -26,8 +26,8 @@
     border-color: $white;
 
     &:hover {
-      background: $accentColor;
-      border-color: $accentColor;
+      background: darken($accentColor, 10%);
+      border-color: darken($accentColor, 10%);
     }
   }
 }

@@ -1,5 +1,5 @@
 .slider {
-  background: url('../img/bg-man.jpg') center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .7)), url('../img/bg-man.jpg') center top no-repeat;
   background-size: cover;
 }
 
@@ -62,6 +62,10 @@
 }
 
 @media (max-width: 680px) {
+  .slider {
+    background-position: left bottom;
+  }
+
   .slider__container {
     padding-top: 80px;
     padding-bottom: 80px;
