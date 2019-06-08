@@ -41,7 +41,7 @@
   margin-bottom: 25px;
 }
 
-.slider__buttons .btn--red {
+.slider__btn:first-child {
   margin-right: 30px;
 }
 
@@ -89,7 +89,7 @@
     font-size: 14px;
   }
 
-  .slider__buttons .btn--red {
+  .slider__btn:first-child {
     margin-right: 20px;
   }
 }
@@ -112,7 +112,7 @@
     font-size: 12px;
   }
 
-  .slider__buttons .btn--red {
+  .slider__btn:first-child {
     margin-bottom: 20px;
     margin-right: auto;
   }
