@@ -49,7 +49,7 @@
 }
 
 .works__list-header {
-  padding: 20px 30px 0 0;
+  padding: 30px 20px 0 0;
 }
 
 .works__list-title {
@@ -95,6 +95,17 @@
   font-size: 12px;
   text-transform: uppercase;
   line-height: 1.667;
+  position: relative;
+
+  &::after {
+    content: '';
+    background-color: $accentColor;
+    position: absolute;
+    left: 0;
+    bottom: -20px;
+    width: 70px;
+    height: 2px;
+  }
 }
 
 .works__item-buttons {
@@ -154,5 +165,12 @@
   .works__list-header {
     text-align: center;
     padding-right: 0;
+  }
+
+  .works__list-title {
+    &::before {
+      left: 50%;
+      transform: translateX(-50%);
+    }
   }
 }
