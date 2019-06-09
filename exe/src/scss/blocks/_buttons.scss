@@ -23,6 +23,14 @@
     }
   }
 
+  &--green {
+    background: $accentColorSecond;
+
+    &:hover {
+      background: darken($accentColorSecond, 10%);
+    }
+  }
+
   &--bordered {
     border-color: $white;
 
