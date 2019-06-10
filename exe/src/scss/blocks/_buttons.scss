@@ -23,6 +23,14 @@
     }
   }
 
+  &--gray {
+    background: $bgColor;
+
+    &:hover {
+      background: darken($bgColor, 10%);
+    }
+  }
+
   &--green {
     background: $accentColorSecond;
 
