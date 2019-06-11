@@ -40,6 +40,7 @@
   &:hover {
     .works__item-caption {
       opacity: 1;
+      border: 5px solid $accentColor;
     }
 
     .works__item-buttons {
@@ -76,9 +77,8 @@
   right: 0;
   bottom: 0;
   background: rgba($black, 0.85);
-  border: 5px solid $accentColor;
   opacity: 0;
-  transition: opacity $transitionDuration;
+  transition: opacity $transitionDuration, border-width $transitionDuration;
   padding: 30px 20px;
 }
 
