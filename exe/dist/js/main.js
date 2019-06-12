@@ -25,10 +25,16 @@ $(document).ready(function() {
     slidesToShow: 4,
     autoplay: true,
     autoplaySpeed: 2000,
-    prevArrow:
-      "<button type='button' class='btn carousel__button carousel__button--prev'>&lt;</button>",
-    nextArrow:
-      "<button type='button' class='btn carousel__button carousel__button--next'>&gt;</button>",
+    prevArrow: `<button type='button' class='btn carousel__button carousel__button--prev'>
+                  <svg>
+                    <use xlink:href='dist/img/symbol/sprite.svg#arrow-left'></use>
+                  </svg>
+                </button>`,
+    nextArrow: `<button type='button' class='btn carousel__button carousel__button--next'>
+                  <svg>
+                    <use xlink:href='dist/img/symbol/sprite.svg#arrow-right'></use>
+                  </svg>
+                </button>`,
     responsive: [
       {
         breakpoint: 768,

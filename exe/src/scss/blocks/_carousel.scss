@@ -5,22 +5,23 @@
 
 .carousel__button {
   position: absolute;
-  color: $textColor;
   background: $bgColor;
-  padding: 8px 10px;
   z-index: 2;
   top: 50%;
-  line-height: 1;
-  font-size: 20px;
+  width: 33px;
+  height: 33px;
+  padding: 0;
   transform: translateY(-50%);
-  transition: color $transitionDuration, background $transitionDuration;
+  transition: background $transitionDuration;
 
   &:hover,
   &:focus,
   &:active {
-    color: $white;
     background: $accentColor;
     outline: none;
+    svg {
+      fill: $white;
+    }
   }
 
   &--prev {
@@ -31,9 +32,14 @@
     right: -35px;
   }
 
-  span {
-    display: inline-block;
-    font-size: 22px;
-    vertical-align: middle;
+  svg {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    fill: $textColor;
+    width: 25px;
+    height: 25px;
+    transform: translate(-50%, -50%);
+    transition: fill $transitionDuration;
   }
 }
