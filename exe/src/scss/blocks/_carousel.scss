@@ -1,0 +1,32 @@
+.slick-track {
+  display: flex;
+  align-items: center;
+}
+
+.carousel__button {
+  position: absolute;
+  color: $textColor;
+  background: $bgColor;
+  padding: 0;
+  width: 33px;
+  height: 33px;
+  z-index: 2;
+  top: 50%;
+  transform: translateY(-50%);
+  transition: color $transitionDuration, background $transitionDuration;
+  outline: 0;
+
+  &:hover,
+  &:focus {
+    color: $white;
+    background: $accentColor;
+  }
+
+  &--prev {
+    left: -35px;
+  }
+
+  &--next {
+    right: -35px;
+  }
+}

@@ -1,0 +1,52 @@
+.clients {
+  background: #202020;
+}
+
+.clients__container {
+  padding-top: 110px;
+  padding-bottom: 110px;
+  text-align: center;
+}
+
+.clients__title {
+  margin-bottom: 30px;
+
+  &::before {
+    left: 50%;
+    transform: translateX(-50%);
+  }
+}
+
+.clients__description {
+  width: 65%;
+  margin: 0 auto;
+  margin-bottom: 50px;
+}
+
+.client__logo-image {
+  @include fluid-image;
+  margin: 0 auto;
+  opacity: 0.3;
+  transition: opacity $transitionDuration;
+
+  &:hover {
+    opacity: 1;
+  }
+}
+
+@media (max-width: 680px) {
+  .clients__container {
+    padding-top: 80px;
+    padding-bottom: 80px;
+  }
+
+  .clients__description {
+    width: 80%;
+  }
+}
+
+@media (max-width: 480px) {
+  .clients__description {
+    width: 100%;
+  }
+}

@@ -10,6 +10,8 @@ body {
   background: $bgColor;
   color: $textColor;
   font-family: $robotoFont;
+  -webkit-font-smoothing: antialiased;
+	-moz-osx-font-smoothing: grayscale;
   overflow-wrap: break-word;
   word-wrap: break-word;
   min-width: 320px;

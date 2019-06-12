@@ -1,4 +1,4 @@
-document.addEventListener("DOMContentLoaded", function() {
+$(document).ready(function() {
   var windowHeight = window.innerHeight;
   var skillsSection = document.querySelector(".skills__bars");
   var isAnimated = false;
@@ -17,6 +17,45 @@ document.addEventListener("DOMContentLoaded", function() {
 
   window.addEventListener("resize", function() {
     windowHeight = this.innerHeight;
+  });
+
+  // init slider
+  $(".carousel").slick({
+    infinite: true,
+    slidesToShow: 4,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    prevArrow:
+      "<button type='button' class='btn carousel__button carousel__button--prev'>&lt;</button>",
+    nextArrow:
+      "<button type='button' class='btn carousel__button carousel__button--next'>&gt;</button>",
+    responsive: [
+      {
+        breakpoint: 768,
+        settings: {
+          arrows: false,
+          slidesToShow: 3
+        }
+      },
+      {
+        breakpoint: 480,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: "40px",
+          slidesToShow: 2
+        }
+      },
+      {
+        breakpoint: 360,
+        settings: {
+          arrows: false,
+          centerMode: true,
+          centerPadding: "40px",
+          slidesToShow: 1
+        }
+      }
+    ]
   });
 });
 
