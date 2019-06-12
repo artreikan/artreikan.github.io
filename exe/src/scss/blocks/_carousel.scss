@@ -14,12 +14,13 @@
   top: 50%;
   transform: translateY(-50%);
   transition: color $transitionDuration, background $transitionDuration;
-  outline: 0;
 
   &:hover,
-  &:focus {
+  &:focus,
+  &:active {
     color: $white;
     background: $accentColor;
+    outline: none;
   }
 
   &--prev {
