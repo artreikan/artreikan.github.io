@@ -77,6 +77,7 @@
   right: 0;
   bottom: 0;
   background: rgba($black, 0.85);
+  border: 0 solid $accentColor;
   opacity: 0;
   transition: opacity $transitionDuration, border-width $transitionDuration;
   padding: 30px 20px;
