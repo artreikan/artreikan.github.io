@@ -1,6 +1,6 @@
 $(document).ready(function() {
   var windowHeight = window.innerHeight;
-  var skillsSection = document.querySelector(".skills__bars");
+  var skillsSection = $(".skills__bars")[0];
   var isAnimated = false;
 
   window.addEventListener("scroll", function() {
