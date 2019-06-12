@@ -1,410 +1,480 @@
 <!DOCTYPE html>
 <html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Exe</title>
+    <link rel="stylesheet" href="dist/css/style.css" />
+  </head>
 
-<head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <meta http-equiv="X-UA-Compatible" content="ie=edge">
-  <title>Exe</title>
-  <link rel="stylesheet" href="dist/css/style.css">
-</head>
+  <body>
+    <header class="page-header">
+      <nav class="page-header__nav">
+        <div class="container page-header__container">
+          <a href="#" class="page-header__logo">
+            <img src="dist/img/logo.png" alt="Логотип" />
+          </a>
+          <ul class="menu page-header__menu">
+            <li class="menu__item page-header__item page-header__item--active">
+              <a href="#" class="menu__link menu__link--active">Home</a>
+            </li>
+            <li class="menu__item page-header__item">
+              <a href="#" class="menu__link">Features</a>
+            </li>
+            <li class="menu__item page-header__item">
+              <a href="#" class="menu__link">Portfolio</a>
+            </li>
+            <li class="menu__item page-header__item">
+              <a href="#" class="menu__link">Skills</a>
+            </li>
+            <li class="menu__item page-header__item">
+              <a href="#" class="menu__link">Blog</a>
+            </li>
+            <li class="menu__item page-header__item">
+              <a href="#" class="menu__link">Clients</a>
+            </li>
+            <li class="menu__item page-header__item">
+              <a href="#" class="menu__link">Contacts</a>
+            </li>
+          </ul>
+        </div>
+      </nav>
+    </header>
+    <!-- /.page-header -->
 
-<body>
-  <header class="page-header">
-    <nav class="page-header__nav">
-      <div class="container page-header__container">
-        <a href="#" class="page-header__logo">
-          <img src="dist/img/logo.png" alt="Логотип">
-        </a>
-        <ul class="menu page-header__menu">
-          <li class="menu__item page-header__item page-header__item--active">
-            <a href="#" class="menu__link menu__link--active">Home</a>
+    <section class="slider">
+      <div class="container slider__container">
+        <div class="slider__info">
+          <h1 class="slider__title">
+            Smart Moves
+            <span class="slider__title--small"
+              >of
+              <span class="slider__title--accented">Successful</span>
+              Business</span
+            >
+          </h1>
+          <p class="slider__description">
+            Claritas est etiam processus dynamicus, qui sequitur mutationem
+            consuetudium lectorum.
+          </p>
+          <div class="slider__buttons">
+            <a href="#" class="btn btn--red slider__btn">Buy this now</a>
+            <a href="#" class="btn btn--bordered slider__btn">Live preview</a>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.slider -->
+
+    <section class="advantages">
+      <div class="container advantages__container">
+        <h2 class="advantages__title">Advantages</h2>
+        <ul class="advantages__list">
+          <li class="advantages__item">
+            <div class="advantages__icon">
+              <svg class="advantages__svg">
+                <use xlink:href="dist/img/symbol/sprite.svg#leaf"></use>
+              </svg>
+            </div>
+            <h3 class="advantages__subtitle">Clean Design</h3>
+            <p class="advantages__description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam.
+            </p>
           </li>
-          <li class="menu__item page-header__item">
-            <a href="#" class="menu__link">Features</a>
+          <li class="advantages__item">
+            <div class="advantages__icon">
+              <svg class="advantages__svg">
+                <use xlink:href="dist/img/symbol/sprite.svg#badge"></use>
+              </svg>
+            </div>
+            <h3 class="advantages__subtitle">Branding</h3>
+            <p class="advantages__description">
+              Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+              esse.
+            </p>
           </li>
-          <li class="menu__item page-header__item">
-            <a href="#" class="menu__link">Portfolio</a>
+          <li class="advantages__item">
+            <div class="advantages__icon">
+              <svg class="advantages__svg">
+                <use xlink:href="dist/img/symbol/sprite.svg#smartphone"></use>
+              </svg>
+            </div>
+            <h3 class="advantages__subtitle">Responsive</h3>
+            <p class="advantages__description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam.
+            </p>
           </li>
-          <li class="menu__item page-header__item">
-            <a href="#" class="menu__link">Skills</a>
-          </li>
-          <li class="menu__item page-header__item">
-            <a href="#" class="menu__link">Blog</a>
-          </li>
-          <li class="menu__item page-header__item">
-            <a href="#" class="menu__link">Clients</a>
-          </li>
-          <li class="menu__item page-header__item">
-            <a href="#" class="menu__link">Contacts</a>
+          <li class="advantages__item">
+            <div class="advantages__icon">
+              <svg class="advantages__svg">
+                <use
+                  xlink:href="dist/img/symbol/sprite.svg#settings-work-tool"
+                ></use>
+              </svg>
+            </div>
+            <h3 class="advantages__subtitle">Branding</h3>
+            <p class="advantages__description">
+              Duis autem vel eum iriure dolor in hendrerit in vulputate velit
+              esse.
+            </p>
           </li>
         </ul>
       </div>
-    </nav>
-  </header>
-  <!-- /.page-header -->
+    </section>
+    <!-- /.advantages -->
 
-  <section class="slider">
-    <div class="container slider__container">
-      <div class="slider__info">
-        <h1 class="slider__title">
-          Smart Moves
-          <span class="slider__title--small">of <span class="slider__title--accented">Successful</span> Business</span>
-        </h1>
-        <p class="slider__description">
-          Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum.
-        </p>
-        <div class="slider__buttons">
-          <a href="#" class="btn btn--red slider__btn">Buy this now</a>
-          <a href="#" class="btn btn--bordered slider__btn">Live preview</a>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /.slider -->
-
-  <section class="advantages">
-    <div class="container advantages__container">
-      <h2 class="advantages__title">Advantages</h2>
-      <ul class="advantages__list">
-        <li class="advantages__item">
-          <div class="advantages__icon">
-            <svg class="advantages__svg">
-              <use xlink:href="dist/img/symbol/sprite.svg#leaf"></use>
-            </svg>
-          </div>
-          <h3 class="advantages__subtitle">Clean Design</h3>
-          <p class="advantages__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam.</p>
-        </li>
-        <li class="advantages__item">
-          <div class="advantages__icon">
-            <svg class="advantages__svg">
-              <use xlink:href="dist/img/symbol/sprite.svg#badge"></use>
-            </svg>
-          </div>
-          <h3 class="advantages__subtitle">Branding</h3>
-          <p class="advantages__description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse.</p>
-        </li>
-        <li class="advantages__item">
-          <div class="advantages__icon">
-            <svg class="advantages__svg">
-              <use xlink:href="dist/img/symbol/sprite.svg#smartphone"></use>
-            </svg>
-          </div>
-          <h3 class="advantages__subtitle">Responsive</h3>
-          <p class="advantages__description">Lorem ipsum dolor sit amet, consectetuer adipiscing elit sed diam.</p>
-        </li>
-        <li class="advantages__item">
-          <div class="advantages__icon">
-            <svg class="advantages__svg">
-              <use xlink:href="dist/img/symbol/sprite.svg#settings-work-tool"></use>
-            </svg>
-          </div>
-          <h3 class="advantages__subtitle">Branding</h3>
-          <p class="advantages__description">Duis autem vel eum iriure dolor in hendrerit in vulputate velit esse.</p>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- /.advantages -->
-
-  <section class="works">
-    <div class="container works__container">
-      <h2 class="works__title">Our works</h2>
-      <ul class="works__list">
-        <li class="works__item works__list-header works__item--col3">
-          <h3 class="works__list-title section-title">See Our Recent Work</h3>
-          <p class="works__list-description section-description">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut
-            laoreet.
-            Claritas est etiam processus dynamicus.
-          </p>
-        </li>
-        <li class="works__item works__item--col6">
-          <figure class="works__item-content">
-            <img src="dist/img/img1.jpg" alt="" class="works__item-image">
-            <figcaption class="works__item-caption">
-              <h3 class="works__item-title">Claritas Est Processus</h3>
-              <p class="works__item-description">
-                Graphic Designer, Photoshop
-              </p>
-            </figcaption>
-            <div class="works__item-buttons">
-              <button class="works__item-button btn btn--circle" aria-label="Open full work image">
-                <svg>
-                  <use xlink:href="dist/img/symbol/sprite.svg#search"></use>
-                </svg>
-              </button>
-              <a href="#" class="works__item-button btn btn--circle" aria-label="Open work page">
-                <svg>
-                  <use xlink:href="dist/img/symbol/sprite.svg#link"></use>
-                </svg>
-              </a>
-            </div>
-          </figure>
-        </li>
-        <li class="works__item works__item--col3">
-          <figure class="works__item-content">
-            <img src="dist/img/img2.jpg" alt="" class="works__item-image">
-            <figcaption class="works__item-caption">
-              <h3 class="works__item-title">Claritas Est Processus</h3>
-              <p class="works__item-description">
-                Graphic Designer, Photoshop
-              </p>
-            </figcaption>
-            <div class="works__item-buttons">
-              <button class="works__item-button btn btn--circle" aria-label="Open full work image">
-                <svg>
-                  <use xlink:href="dist/img/symbol/sprite.svg#search"></use>
-                </svg>
-              </button>
-              <a href="#" class="works__item-button btn btn--circle" aria-label="Open work page">
-                <svg>
-                  <use xlink:href="dist/img/symbol/sprite.svg#link"></use>
-                </svg>
-              </a>
-            </div>
-          </figure>
-        </li>
-        <li class="works__item works__item--col3">
-          <figure class="works__item-content">
-            <img src="dist/img/img3.jpg" alt="" class="works__item-image">
-            <figcaption class="works__item-caption">
-              <h3 class="works__item-title">Claritas Est Processus</h3>
-              <p class="works__item-description">
-                Graphic Designer, Photoshop
-              </p>
-            </figcaption>
-            <div class="works__item-buttons">
-              <button class="works__item-button btn btn--circle" aria-label="Open full work image">
-                <svg>
-                  <use xlink:href="dist/img/symbol/sprite.svg#search"></use>
-                </svg>
-              </button>
-              <a href="#" class="works__item-button btn btn--circle" aria-label="Open work page">
-                <svg>
-                  <use xlink:href="dist/img/symbol/sprite.svg#link"></use>
-                </svg>
-              </a>
-            </div>
-          </figure>
-        </li>
-        <li class="works__item works__item--col5">
-          <figure class="works__item-content">
-            <img src="dist/img/img4.jpg" alt="" class="works__item-image">
-            <figcaption class="works__item-caption">
-              <h3 class="works__item-title">Claritas Est Processus</h3>
-              <p class="works__item-description">
-                Graphic Designer, Photoshop
-              </p>
-            </figcaption>
-            <div class="works__item-buttons">
-              <button class="works__item-button btn btn--circle" aria-label="Open full work image">
-                <svg>
-                  <use xlink:href="dist/img/symbol/sprite.svg#search"></use>
-                </svg>
-              </button>
-              <a href="#" class="works__item-button btn btn--circle" aria-label="Open work page">
-                <svg>
-                  <use xlink:href="dist/img/symbol/sprite.svg#link"></use>
-                </svg>
-              </a>
-            </div>
-          </figure>
-        </li>
-        <li class="works__item works__item--col4">
-          <figure class="works__item-content">
-            <img src="dist/img/img5.jpg" alt="" class="works__item-image">
-            <figcaption class="works__item-caption">
-              <h3 class="works__item-title">Claritas Est Processus</h3>
-              <p class="works__item-description">
-                Graphic Designer, Photoshop
-              </p>
-            </figcaption>
-            <div class="works__item-buttons">
-              <button class="works__item-button btn btn--circle" aria-label="Open full work image">
-                <svg>
-                  <use xlink:href="dist/img/symbol/sprite.svg#search"></use>
-                </svg>
-              </button>
-              <a href="#" class="works__item-button btn btn--circle" aria-label="Open work page">
-                <svg>
-                  <use xlink:href="dist/img/symbol/sprite.svg#link"></use>
-                </svg>
-              </a>
-            </div>
-          </figure>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- /.works -->
-
-  <section class="responsive">
-    <div class="container responsive__container">
-      <div class="responsive__image-container">
-        <img src="dist/img/bg-two.png" alt="" class="responsive__image">
-      </div>
-      <div class="responsive__info">
-        <h2 class="section-title responsive__title">Fully Responsive Design Ready</h2>
-        <p class="section-description responsive__description">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
-          Claritas est etiam processus dynamicus.
-        </p>
-        <ul class="responsive__list">
-          <li class="responsive__list-item">Claritas est etiam processus dynamicus.</li>
-          <li class="responsive__list-item">Mirum est notare quam littera gothica, quam.</li>
-          <li class="responsive__list-item">Nam liber tempor cum soluta.</li>
-          <li class="responsive__list-item">Duis autem vel eum iriure dolor in hendrerit.</li>
-          <li class="responsive__list-item">Typi non habent claritatem insitam.</li>
+    <section class="works">
+      <div class="container works__container">
+        <h2 class="works__title">Our works</h2>
+        <ul class="works__list">
+          <li class="works__item works__list-header works__item--col3">
+            <h3 class="works__list-title section-title">See Our Recent Work</h3>
+            <p class="works__list-description section-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet. Claritas est etiam
+              processus dynamicus.
+            </p>
+          </li>
+          <li class="works__item works__item--col6">
+            <figure class="works__item-content">
+              <img src="dist/img/img1.jpg" alt="" class="works__item-image" />
+              <figcaption class="works__item-caption">
+                <h3 class="works__item-title">Claritas Est Processus</h3>
+                <p class="works__item-description">
+                  Graphic Designer, Photoshop
+                </p>
+              </figcaption>
+              <div class="works__item-buttons">
+                <button
+                  class="works__item-button btn btn--circle"
+                  aria-label="Open full work image"
+                >
+                  <svg>
+                    <use xlink:href="dist/img/symbol/sprite.svg#search"></use>
+                  </svg>
+                </button>
+                <a
+                  href="#"
+                  class="works__item-button btn btn--circle"
+                  aria-label="Open work page"
+                >
+                  <svg>
+                    <use xlink:href="dist/img/symbol/sprite.svg#link"></use>
+                  </svg>
+                </a>
+              </div>
+            </figure>
+          </li>
+          <li class="works__item works__item--col3">
+            <figure class="works__item-content">
+              <img src="dist/img/img2.jpg" alt="" class="works__item-image" />
+              <figcaption class="works__item-caption">
+                <h3 class="works__item-title">Claritas Est Processus</h3>
+                <p class="works__item-description">
+                  Graphic Designer, Photoshop
+                </p>
+              </figcaption>
+              <div class="works__item-buttons">
+                <button
+                  class="works__item-button btn btn--circle"
+                  aria-label="Open full work image"
+                >
+                  <svg>
+                    <use xlink:href="dist/img/symbol/sprite.svg#search"></use>
+                  </svg>
+                </button>
+                <a
+                  href="#"
+                  class="works__item-button btn btn--circle"
+                  aria-label="Open work page"
+                >
+                  <svg>
+                    <use xlink:href="dist/img/symbol/sprite.svg#link"></use>
+                  </svg>
+                </a>
+              </div>
+            </figure>
+          </li>
+          <li class="works__item works__item--col3">
+            <figure class="works__item-content">
+              <img src="dist/img/img3.jpg" alt="" class="works__item-image" />
+              <figcaption class="works__item-caption">
+                <h3 class="works__item-title">Claritas Est Processus</h3>
+                <p class="works__item-description">
+                  Graphic Designer, Photoshop
+                </p>
+              </figcaption>
+              <div class="works__item-buttons">
+                <button
+                  class="works__item-button btn btn--circle"
+                  aria-label="Open full work image"
+                >
+                  <svg>
+                    <use xlink:href="dist/img/symbol/sprite.svg#search"></use>
+                  </svg>
+                </button>
+                <a
+                  href="#"
+                  class="works__item-button btn btn--circle"
+                  aria-label="Open work page"
+                >
+                  <svg>
+                    <use xlink:href="dist/img/symbol/sprite.svg#link"></use>
+                  </svg>
+                </a>
+              </div>
+            </figure>
+          </li>
+          <li class="works__item works__item--col5">
+            <figure class="works__item-content">
+              <img src="dist/img/img4.jpg" alt="" class="works__item-image" />
+              <figcaption class="works__item-caption">
+                <h3 class="works__item-title">Claritas Est Processus</h3>
+                <p class="works__item-description">
+                  Graphic Designer, Photoshop
+                </p>
+              </figcaption>
+              <div class="works__item-buttons">
+                <button
+                  class="works__item-button btn btn--circle"
+                  aria-label="Open full work image"
+                >
+                  <svg>
+                    <use xlink:href="dist/img/symbol/sprite.svg#search"></use>
+                  </svg>
+                </button>
+                <a
+                  href="#"
+                  class="works__item-button btn btn--circle"
+                  aria-label="Open work page"
+                >
+                  <svg>
+                    <use xlink:href="dist/img/symbol/sprite.svg#link"></use>
+                  </svg>
+                </a>
+              </div>
+            </figure>
+          </li>
+          <li class="works__item works__item--col4">
+            <figure class="works__item-content">
+              <img src="dist/img/img5.jpg" alt="" class="works__item-image" />
+              <figcaption class="works__item-caption">
+                <h3 class="works__item-title">Claritas Est Processus</h3>
+                <p class="works__item-description">
+                  Graphic Designer, Photoshop
+                </p>
+              </figcaption>
+              <div class="works__item-buttons">
+                <button
+                  class="works__item-button btn btn--circle"
+                  aria-label="Open full work image"
+                >
+                  <svg>
+                    <use xlink:href="dist/img/symbol/sprite.svg#search"></use>
+                  </svg>
+                </button>
+                <a
+                  href="#"
+                  class="works__item-button btn btn--circle"
+                  aria-label="Open work page"
+                >
+                  <svg>
+                    <use xlink:href="dist/img/symbol/sprite.svg#link"></use>
+                  </svg>
+                </a>
+              </div>
+            </figure>
+          </li>
         </ul>
-        <a href="#" class="responsive__btn btn btn--green">Buy this now</a>
       </div>
-    </div>
-  </section>
-  <!-- /.responsive -->
+    </section>
+    <!-- /.works -->
 
-  <section class="skills">
-    <div class="container skills__container">
-      <div class="skills__text">
-        <h2 class="section-title skills__title">Our skills</h2>
-        <p class="section-description skills__description">
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet.
-          Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium.
-        </p>
-        <a href="" class="btn btn--gray skills__btn">Our Services</a>
-      </div>
-      <div class="skills__bars">
-        <div class="progressbar skills__progressbar">
-          <p class="progressbar__name">Photoshop</p>
-          <div class="progressbar__element" data-value="95">
-            <div class="progressbar__line">
-              <span class="progressbar__value">95%</span>
-            </div>
-          </div>
+    <section class="responsive">
+      <div class="container responsive__container">
+        <div class="responsive__image-container">
+          <img src="dist/img/bg-two.png" alt="" class="responsive__image" />
         </div>
-        <div class="progressbar skills__progressbar">
-          <p class="progressbar__name">Wordpress</p>
-          <div class="progressbar__element" data-value="50">
-            <div class="progressbar__line">
-              <span class="progressbar__value">50%</span>
-            </div>
-          </div>
-        </div>
-        <div class="progressbar skills__progressbar">
-          <p class="progressbar__name">Ecommerce</p>
-          <div class="progressbar__element" data-value="72">
-            <div class="progressbar__line">
-              <span class="progressbar__value">72%</span>
-            </div>
-          </div>
-        </div>
-        <div class="progressbar skills__progressbar">
-          <p class="progressbar__name">Photography</p>
-          <div class="progressbar__element" data-value="36">
-            <div class="progressbar__line">
-              <span class="progressbar__value">36%</span>
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- /.skills -->
-
-  <section class="blog">
-    <div class="container blog__container">
-      <h2 class="blog__title">Latest posts</h2>
-      <ul class="blog__list">
-        <li class="blog__item blog__item--col8 blog__item--row1-4">
-          <a href="#" class="blog__category-link" aria-label="Image category">
-            <svg>
-              <use xlink:href="dist/img/symbol/sprite.svg#image"></use>
-            </svg>
-          </a>
-          <div class="blog__post-info">
-            <a href="#" class="blog__post-link">
-              <h3 class="blog__post-title">
-                Lorem ipsum dolor sit amet, consectetuer adipiscing elit
-              </h3>
-            </a>
-            <p class="blog__post-description">
-              <time datetime="2019-02-04">04 February 2019</time>, Posted by
-              <span class="blog__post-description--accented">Admin</span>, Comments:
-              <span class="blog__post-description--accented">26</span>
-            </p>
-          </div>
-        </li>
-        <li class="blog__item blog__list-header blog__item--col4 blog__item--row1-3">
-          <h3 class="section-title blog__list-title">Latest blog posts</h3>
-          <p class="section-description blog__list-description">
-            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod tincidunt ut laoreet
-            dolore magna aliquam erat volutpat. Claritas est etiam processus dynamicus, qui sequitur mutationem
-            consuetudium lectorum nobis videntur parum.
+        <div class="responsive__info">
+          <h2 class="section-title responsive__title">
+            Fully Responsive Design Ready
+          </h2>
+          <p class="section-description responsive__description">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet. Claritas est etiam
+            processus dynamicus.
           </p>
-        </li>
-        <li class="blog__item blog__item--col5 blog__item--row4-6">
-          <a href="#" class="blog__category-link" aria-label="Photo category">
-            <svg>
-              <use xlink:href="dist/img/symbol/sprite.svg#photo-camera"></use>
-            </svg>
-          </a>
-          <div class="blog__post-info">
-            <a href="#" class="blog__post-link">
-              <h3 class="blog__post-title blog__post-title--small">
-                Nam liber tempor cum soluta
-              </h3>
-            </a>
-            <p class="blog__post-description">
-              <time datetime="2019-02-04">04 February 2019</time>, Posted by
-              <span class="blog__post-description--accented">Admin</span>, Comments:
-              <span class="blog__post-description--accented">26</span>
-            </p>
-          </div>
-        </li>
-        <li class="blog__item blog__item--col3 blog__item--row4-6">
-          <a href="#" class="blog__category-link" aria-label="Video category">
-            <svg>
-              <use xlink:href="dist/img/symbol/sprite.svg#video"></use>
-            </svg>
-          </a>
-          <div class="blog__post-info">
-            <a href="#" class="blog__post-link">
-              <h3 class="blog__post-title blog__post-title--small">
-                Duis autem vel eum iriure
-              </h3>
-            </a>
-            <p class="blog__post-description">
-              <time datetime="2019-02-04">04 February 2019</time>, Posted by
-              <span class="blog__post-description--accented">Admin</span>, Comments:
-              <span class="blog__post-description--accented">26</span>
-            </p>
-          </div>
-        </li>
-        <li class="blog__item blog__item--col4 blog__item--row3-6">
-          <a href="#" class="blog__category-link" aria-label="Photo category">
-            <svg>
-              <use xlink:href="dist/img/symbol/sprite.svg#photo-camera"></use>
-            </svg>
-          </a>
-          <div class="blog__post-info">
-            <a href="#" class="blog__post-link">
-              <h3 class="blog__post-title blog__post-title--small">
-                Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium
-              </h3>
-            </a>
-            <p class="blog__post-description">
-              <time datetime="2019-02-04">04 February 2019</time>, Posted by
-              <span class="blog__post-description--accented">Admin</span>, Comments:
-              <span class="blog__post-description--accented">26</span>
-            </p>
-          </div>
-        </li>
-      </ul>
-    </div>
-  </section>
-  <!-- /.blog -->
-  <script src="dist/js/main.js"></script>
-</body>
+          <ul class="responsive__list">
+            <li class="responsive__list-item">
+              Claritas est etiam processus dynamicus.
+            </li>
+            <li class="responsive__list-item">
+              Mirum est notare quam littera gothica, quam.
+            </li>
+            <li class="responsive__list-item">Nam liber tempor cum soluta.</li>
+            <li class="responsive__list-item">
+              Duis autem vel eum iriure dolor in hendrerit.
+            </li>
+            <li class="responsive__list-item">
+              Typi non habent claritatem insitam.
+            </li>
+          </ul>
+          <a href="#" class="responsive__btn btn btn--green">Buy this now</a>
+        </div>
+      </div>
+    </section>
+    <!-- /.responsive -->
 
+    <section class="skills">
+      <div class="container skills__container">
+        <div class="skills__text">
+          <h2 class="section-title skills__title">Our skills</h2>
+          <p class="section-description skills__description">
+            Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+            nonummy nibh euismod tincidunt ut laoreet. Claritas est etiam
+            processus dynamicus, qui sequitur mutationem consuetudium.
+          </p>
+          <a href="" class="btn btn--gray skills__btn">Our Services</a>
+        </div>
+        <div class="skills__bars">
+          <div class="progressbar skills__progressbar">
+            <p class="progressbar__name">Photoshop</p>
+            <div class="progressbar__element" data-value="95">
+              <div class="progressbar__line">
+                <span class="progressbar__value">95%</span>
+              </div>
+            </div>
+          </div>
+          <div class="progressbar skills__progressbar">
+            <p class="progressbar__name">Wordpress</p>
+            <div class="progressbar__element" data-value="50">
+              <div class="progressbar__line">
+                <span class="progressbar__value">50%</span>
+              </div>
+            </div>
+          </div>
+          <div class="progressbar skills__progressbar">
+            <p class="progressbar__name">Ecommerce</p>
+            <div class="progressbar__element" data-value="72">
+              <div class="progressbar__line">
+                <span class="progressbar__value">72%</span>
+              </div>
+            </div>
+          </div>
+          <div class="progressbar skills__progressbar">
+            <p class="progressbar__name">Photography</p>
+            <div class="progressbar__element" data-value="36">
+              <div class="progressbar__line">
+                <span class="progressbar__value">36%</span>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- /.skills -->
+
+    <section class="blog">
+      <div class="container blog__container">
+        <h2 class="blog__title">Latest posts</h2>
+        <ul class="blog__list">
+          <li class="blog__item blog__item--col8 blog__item--row1-4">
+            <a href="#" class="blog__category-link" aria-label="Image category">
+              <svg>
+                <use xlink:href="dist/img/symbol/sprite.svg#image"></use>
+              </svg>
+            </a>
+            <div class="blog__post-info">
+              <a href="#" class="blog__post-link">
+                <h3 class="blog__post-title">
+                  Lorem ipsum dolor sit amet, consectetuer adipiscing elit
+                </h3>
+              </a>
+              <p class="blog__post-description">
+                <time datetime="2019-02-04">04 February 2019</time>, Posted by
+                <span class="blog__post-description--accented">Admin</span>,
+                Comments:
+                <span class="blog__post-description--accented">26</span>
+              </p>
+            </div>
+          </li>
+          <li
+            class="blog__item blog__list-header blog__item--col4 blog__item--row1-3"
+          >
+            <h3 class="section-title blog__list-title">Latest blog posts</h3>
+            <p class="section-description blog__list-description">
+              Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam
+              nonummy nibh euismod tincidunt ut laoreet dolore magna aliquam
+              erat volutpat. Claritas est etiam processus dynamicus, qui
+              sequitur mutationem consuetudium lectorum nobis videntur parum.
+            </p>
+          </li>
+          <li class="blog__item blog__item--col5 blog__item--row4-6">
+            <a href="#" class="blog__category-link" aria-label="Photo category">
+              <svg>
+                <use xlink:href="dist/img/symbol/sprite.svg#photo-camera"></use>
+              </svg>
+            </a>
+            <div class="blog__post-info">
+              <a href="#" class="blog__post-link">
+                <h3 class="blog__post-title blog__post-title--small">
+                  Nam liber tempor cum soluta
+                </h3>
+              </a>
+              <p class="blog__post-description">
+                <time datetime="2019-02-04">04 February 2019</time>, Posted by
+                <span class="blog__post-description--accented">Admin</span>,
+                Comments:
+                <span class="blog__post-description--accented">26</span>
+              </p>
+            </div>
+          </li>
+          <li class="blog__item blog__item--col3 blog__item--row4-6">
+            <a href="#" class="blog__category-link" aria-label="Video category">
+              <svg>
+                <use xlink:href="dist/img/symbol/sprite.svg#video"></use>
+              </svg>
+            </a>
+            <div class="blog__post-info">
+              <a href="#" class="blog__post-link">
+                <h3 class="blog__post-title blog__post-title--small">
+                  Duis autem vel eum iriure
+                </h3>
+              </a>
+              <p class="blog__post-description">
+                <time datetime="2019-02-04">04 February 2019</time>, Posted by
+                <span class="blog__post-description--accented">Admin</span>,
+                Comments:
+                <span class="blog__post-description--accented">26</span>
+              </p>
+            </div>
+          </li>
+          <li class="blog__item blog__item--col4 blog__item--row3-6">
+            <a href="#" class="blog__category-link" aria-label="Photo category">
+              <svg>
+                <use xlink:href="dist/img/symbol/sprite.svg#photo-camera"></use>
+              </svg>
+            </a>
+            <div class="blog__post-info">
+              <a href="#" class="blog__post-link">
+                <h3 class="blog__post-title blog__post-title--small">
+                  Claritas est etiam processus dynamicus, qui sequitur
+                  mutationem consuetudium
+                </h3>
+              </a>
+              <p class="blog__post-description">
+                <time datetime="2019-02-04">04 February 2019</time>, Posted by
+                <span class="blog__post-description--accented">Admin</span>,
+                Comments:
+                <span class="blog__post-description--accented">26</span>
+              </p>
+            </div>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <!-- /.blog -->
+    <script src="dist/js/main.js"></script>
+  </body>
 </html>

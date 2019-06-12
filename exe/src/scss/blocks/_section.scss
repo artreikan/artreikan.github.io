@@ -10,7 +10,7 @@ $lineColor: #2f2f2f;
   position: relative;
 
   &::before {
-    content: '';
+    content: "";
     background-color: $lineColor;
     position: absolute;
     top: -30px;

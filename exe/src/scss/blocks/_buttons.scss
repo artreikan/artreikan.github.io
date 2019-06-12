@@ -17,7 +17,7 @@
   &--red {
     background: $accentColor;
     color: $white;
-    
+
     &:hover {
       background: darken($accentColor, 10%);
     }
@@ -50,7 +50,7 @@
 
   &--circle {
     border-radius: 50%;
-    width: 45px;    
+    width: 45px;
     height: 45px;
     padding: 0;
   }

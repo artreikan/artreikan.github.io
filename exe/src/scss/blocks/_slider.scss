@@ -1,5 +1,6 @@
 .slider {
-  background: linear-gradient(rgba(0, 0, 0, .2), rgba(0, 0, 0, .7)), url('../img/bg-man.jpg') center top no-repeat;
+  background: linear-gradient(rgba(0, 0, 0, 0.2), rgba(0, 0, 0, 0.7)),
+    url("../img/bg-man.jpg") center top no-repeat;
   background-size: cover;
 }
 
@@ -67,7 +68,7 @@
   }
 
   .slider__description {
-    color: lighten($textColor, 30%)
+    color: lighten($textColor, 30%);
   }
 }
 
@@ -140,4 +141,3 @@
     }
   }
 }
-
