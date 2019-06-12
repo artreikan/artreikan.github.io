@@ -1,6 +1,6 @@
 document.addEventListener('DOMContentLoaded', function () {
   var windowHeight = window.innerHeight;
-  var skillsSection = document.querySelector('.skills');
+  var skillsSection = document.querySelector('.skills__bars');
   var isAnimated = false;
 
   window.addEventListener('scroll', function () {
