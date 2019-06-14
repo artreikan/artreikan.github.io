@@ -5,7 +5,7 @@
 
 .carousel__button {
   position: absolute;
-  background: $bgColor;
+  background: rgba($bgColor, .6);
   z-index: 2;
   top: 50%;
   width: 33px;
@@ -25,11 +25,11 @@
   }
 
   &--prev {
-    left: -35px;
+    left: 0px;
   }
 
   &--next {
-    right: -35px;
+    right: 0px;
   }
 
   svg {
