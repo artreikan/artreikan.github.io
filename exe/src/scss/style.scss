@@ -3,6 +3,8 @@
 @import "variables";
 @import "mixins";
 @import "core";
+@import "libs/slick-theme";
+@import "libs/slick";
 @import "blocks/section";
 @import "blocks/menu";
 @import "blocks/progressbar";
@@ -17,3 +19,4 @@
 @import "blocks/carousel";
 @import "blocks/clients";
 @import "blocks/contacts";
+@import "blocks/footer";

@@ -5,14 +5,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
     <title>Exe</title>
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css"
-    />
-    <link
-      rel="stylesheet"
-      href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css"
-    />
     <link rel="stylesheet" href="dist/css/style.css" />
   </head>
 
@@ -20,7 +12,7 @@
     <header class="page-header">
       <nav class="page-header__nav">
         <div class="container page-header__container">
-          <a href="#" class="page-header__logo">
+          <a href="#" class="logo page-header__logo">
             <img src="dist/img/logo.png" alt="Логотип" />
           </a>
           <ul class="menu page-header__menu">
@@ -549,6 +541,7 @@
                   name="Name"
                   class="contacts__form-input"
                   placeholder="Name"
+                  required
                 />
               </p>
               <p class="contacts__form-element">
@@ -561,6 +554,7 @@
                   name="Phone"
                   class="contacts__form-input"
                   placeholder="Phone"
+                  required
                 />
               </p>
               <p class="contacts__form-element">
@@ -572,6 +566,7 @@
                   id="input-message"
                   class="contacts__form-input contacts__form-input--textarea"
                   placeholder="Message"
+                  required
                 ></textarea>
               </p>
               <p class="contacts__form-element contacts__form-element--btn">
@@ -587,14 +582,39 @@
         </div>
       </div>
     </section>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.4.1/jquery.min.js"
-    ></script>
-    <script
-      defer
-      src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js"
-    ></script>
+    <!-- /.contacts -->
+
+    <footer class="page-footer">
+      <div class="container page__footer-container">
+        <nav class="page-footer__nav">
+          <ul class="menu page-footer__menu">
+            <li class="menu__item page-footer__item">
+              <a href="#" class="menu__link menu__link--active">Home</a>
+            </li>
+            <li class="menu__item page-footer__item">
+              <a href="#" class="menu__link">Features</a>
+            </li>
+            <li class="menu__item page-footer__item">
+              <a href="#" class="menu__link">Portfolio</a>
+            </li>
+            <li class="menu__item page-footer__item">
+              <a href="#" class="menu__link">Skills</a>
+            </li>
+            <li class="menu__item page-footer__item">
+              <a href="#" class="menu__link">Blog</a>
+            </li>
+            <li class="menu__item page-footer__item">
+              <a href="#" class="menu__link">Clients</a>
+            </li>
+            <li class="menu__item page-footer__item">
+              <a href="#" class="menu__link">Contacts</a>
+            </li>
+          </ul>
+        </nav>
+      </div>
+    </footer>
+    <!-- /.page-footer -->
+    
     <script defer src="dist/js/main.js"></script>
   </body>
 </html>

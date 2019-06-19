@@ -5,13 +5,19 @@ const path = {
   src: {
     html: "./index.html",
     scss: "./src/scss/**/*.scss",
-    images: "./src/img/*"
+    images: "./src/img/*",
+    js: [
+      "./src/js/jquery.min.js",
+      "./src/js/slick.min.js",
+      "./src/js/script.js"
+    ]
   },
   build: {
     root: "./dist",
     css: "./dist/css",
     images: "./dist/img",
-    svg: "./dist/img/*.svg"
+    svg: "./dist/img/*.svg",
+    js: "./dist/js"
   }
 };
 
@@ -26,9 +32,26 @@ gulp.task("styles", () => {
         grid: true
       })
     )
-    .pipe($.cleanCss())
+    .pipe(
+      $.cleanCss({
+        level: 2
+      })
+    )
     .pipe($.sourcemaps.write())
     .pipe(gulp.dest(path.build.css));
+});
+
+gulp.task("scripts", () => {
+  return gulp
+    .src(path.src.js)
+    .pipe($.concat("main.js"))
+    .pipe($.babel({
+      presets: ['@babel/env']
+    }))
+    .pipe($.uglify({
+      toplevel: true
+    }))
+    .pipe(gulp.dest(path.build.js));
 });
 
 gulp.task("images", () => {
@@ -56,14 +79,15 @@ gulp.task("svg-sprite", () => {
 gulp.task("watch", () => {
   gulp.watch(path.src.scss, gulp.series("styles"));
   gulp.watch(path.src.images, gulp.series("images"));
+  gulp.watch(path.src.js, gulp.series("scripts"));
 });
 
 gulp.task(
   "build",
-  gulp.parallel("styles", gulp.series("images", "svg-sprite"))
+  gulp.parallel("styles", "scripts", gulp.series("images", "svg-sprite"))
 );
 
 gulp.task(
   "default",
-  gulp.parallel("watch", "styles", gulp.series("images", "svg-sprite"))
+  gulp.parallel("watch", "styles", "scripts", gulp.series("images", "svg-sprite"))
 );

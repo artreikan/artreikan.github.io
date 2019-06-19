@@ -2,6 +2,7 @@
   display: flex;
   flex-wrap: wrap;
   list-style: none;
+  margin-bottom: 0;
 }
 
 .menu__link {
@@ -10,7 +11,7 @@
   font-size: 12px;
   font-family: $ralewayFont;
   text-transform: uppercase;
-  line-height: 1.667;
+  line-height: 1.677;
 
   &:hover,
   &--active {
