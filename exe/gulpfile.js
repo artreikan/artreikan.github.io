@@ -25,7 +25,6 @@ gulp.task("styles", () => {
   return gulp
     .src(path.src.scss)
     .pipe($.plumber())
-    .pipe($.sourcemaps.init())
     .pipe($.sass())
     .pipe(
       $.autoprefixer({
@@ -37,7 +36,6 @@ gulp.task("styles", () => {
         level: 2
       })
     )
-    .pipe($.sourcemaps.write())
     .pipe(gulp.dest(path.build.css));
 });
 
