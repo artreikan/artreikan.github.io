@@ -24,16 +24,7 @@
   padding-bottom: 10.7%;
   position: relative;
 
-  &::before {
-    content: '';
-    position: absolute;
-    left: 0;
-    right: 0;
-    top: 0;
-    bottom: 0;
-    pointer-events: none;
-    background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="100%" x2="100%" y2="0" stroke="rgb(255, 255, 255)" stroke-width="1"></line></svg>');
-  }
+  @include bgLine;
 }
 
 .page-header__logo {
@@ -47,7 +38,7 @@
   margin-bottom: 60px;
 
   @media (min-width: 1500px) {
-    @include dynamic-font-size(112.5%, 36, 18, 1500px, 3000, 1500);
+    @include dynamicFontSize(112.5%, 36, 18, 1500px, 3000, 1500);
   }
 }
 
@@ -64,7 +55,7 @@
   color: $white;
 
   @media (min-width: 1500px) {
-    @include dynamic-font-size(81.25%, 26, 13, 1500px, 3000, 1500);
+    @include dynamicFontSize(81.25%, 26, 13, 1500px, 3000, 1500);
   }
 }
 

@@ -1,4 +1,4 @@
-@mixin min-max($min-width, $max-width, $padding) {
+@mixin minMax($min-width, $max-width, $padding) {
   min-width: $min-width;
   max-width: $max-width;
   padding: 0 $padding;
@@ -6,7 +6,7 @@
   margin: 0 auto;
 }
 
-@mixin adaptive-video() {
+@mixin adaptiveVideo() {
   position: relative;
   padding-bottom: 56.25%; /* задаёт высоту контейнера для 16:9 (если 4:3 — поставьте 75%) */
   padding-top: 30px;
@@ -22,7 +22,7 @@
   }
 }
 
-@mixin visually-hidden() {
+@mixin visuallyHidden() {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -35,40 +35,40 @@
   overflow: hidden;
 }
 
-@mixin fluid-image() {
+@mixin fluidImage() {
   max-width: 100%;
   height: auto;
   @content;
 }
 
-@mixin roboto-regular() {
+@mixin robotoRegular() {
   font-family: $robotoFont;
   font-weight: 400;
 }
 
-@mixin roboto-regular-italic() {
+@mixin robotoRegularItalic() {
   font-family: $robotoFont;
   font-weight: 400;
   font-style: italic;
 }
 
-@mixin roboto-light() {
+@mixin robotoLight() {
   font-family: $robotoFont;
   font-weight: 300;
 }
 
-@mixin roboto-light-italic() {
+@mixin robotoLightItalic() {
   font-family: $robotoFont;
   font-weight: 300;
   font-style: italic;
 }
 
-@mixin roboto-bold() {
+@mixin robotoBold() {
   font-family: $robotoFont;
   font-weight: 700;
 }
 
-@mixin dynamic-font-size(
+@mixin dynamicFontSize(
   $minSizePercent,
   $maxSize,
   $minSize,
@@ -80,4 +80,17 @@
     #{$minSizePercent} + (#{$maxSize} - #{$minSize}) * (100vw - #{$minWidthPx}) /
       (#{$maxWidth} - #{$minWidth})
   );
+}
+
+@mixin bgLine() {
+  &::before {
+    content: '';
+    position: absolute;
+    left: 0;
+    right: 0;
+    top: 0;
+    bottom: 0;
+    pointer-events: none;
+    background-image: url('data:image/svg+xml;utf8, <svg xmlns="http://www.w3.org/2000/svg"><line x1="0" y1="100%" x2="100%" y2="0" stroke="rgb(255, 255, 255)" stroke-width="1"></line></svg>');
+  }
 }
