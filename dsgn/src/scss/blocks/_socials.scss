@@ -1,0 +1,33 @@
+.socials {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  align-items: flex-end;
+}
+
+.socials__item:not(:last-child) {
+  margin-right: 12px;
+}
+
+.socials__icon {
+  &--fb {
+    width: 10px;
+    height: 22px;
+  }
+
+  &--twitter {
+    width: 26px;
+    height: 21px;
+  }
+
+  &--linkedin {
+    width: 24px;
+    height: 23px;
+  }
+
+  &--google {
+    width: 19px;
+    height: 19px;
+  }
+}
