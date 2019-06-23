@@ -8,11 +8,12 @@ html {
 
 body {
   background: $mainBgColor;
-  -webkit-font-smoothing: antialiased;
-	-moz-osx-font-smoothing: grayscale;
   overflow-wrap: break-word;
   word-wrap: break-word;
   min-width: 320px;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   @include robotoRegular;
 }
 
@@ -24,5 +25,5 @@ a:hover {
 
 .logo {
   display: block;
-  max-width: 100%;
+  @include fluidImage;
 }

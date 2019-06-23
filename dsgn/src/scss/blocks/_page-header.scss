@@ -1,6 +1,7 @@
 .page-header {
   display: grid;
   grid-template-columns: repeat(16, 1fr);
+  position: relative;
 }
 
 .page-header__left {
@@ -79,6 +80,12 @@
   &:hover {
     color: $black;
   }
+}
+
+.page-header__menu {
+  position: absolute;
+  top: 50px;
+  right: 11%;
 }
 
 @media (max-width: 980px) {
