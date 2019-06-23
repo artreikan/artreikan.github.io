@@ -39,6 +39,7 @@ $hamburgerColorActive: #f8c255;
   &:hover,
   &:active {
     border-color: $hamburgerColorActive;
+    background: $hamburgerColorActive;
   }
 }
 

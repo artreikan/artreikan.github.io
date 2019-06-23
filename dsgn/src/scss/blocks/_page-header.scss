@@ -96,12 +96,22 @@
   .page-header__right {
     grid-column: span 7;
   }
+
+  .page-header__menu {
+    top: 30px;
+    right: 30px;
+  }
+}
+
+@media (max-width: 768px) {
+  .page-header__menu {
+    height: 100%;
+  }
 }
 
 @media (max-width: 580px) {
   .page-header {
     grid-template-columns: 1fr;
-    grid-template-rows: 1fr;
   }
 
   .page-header__left {
