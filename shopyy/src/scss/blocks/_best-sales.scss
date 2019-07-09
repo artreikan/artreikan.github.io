@@ -62,3 +62,29 @@
     margin-right: 5px;
   }
 }
+
+@media screen and (max-width: 1050px) {
+  .best-sales__item {
+    flex-direction: column;
+  }
+
+  .best-sales__item-info {
+    margin-left: 0;
+  }
+
+  .best-sales__item-image {
+    margin-bottom: 15px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .best-sales__item {
+    width: calc(50% - 30px);
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .best-sales__item {
+    width: 100%;
+  }
+}
