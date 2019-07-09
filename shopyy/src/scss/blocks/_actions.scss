@@ -1,0 +1,90 @@
+.actions {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+  list-style: none;
+}
+
+.actions__item {
+  &--cart {
+    position: relative;
+  }
+}
+
+.actions__cart-counter {
+  position: absolute;
+  top: -10px;
+  left: calc(50% - 7.5px);
+  display: block;
+  border-radius: 50%;
+  width: 15px;
+  height: 15px;
+  background: $textColor;
+  color: white;
+  font-size: 10px;
+  text-align: center;
+}
+
+.actions__btn {
+  padding: 0;
+  background: none;
+  border: none;
+  appearance: none;
+
+  &:hover,
+  &:focus {
+    outline: none;
+
+    .actions__icon {
+      stroke: $accentColor;
+      fill: $accentColor;
+    }
+  }
+}
+
+.actions__icon {
+  @include transition(all);
+
+  &--search {
+    width: 18px;
+    height: 18px;
+  }
+
+  &--user {
+    width: 20px;
+    height: 21px;
+  }
+
+  &--cart {
+    width: 24px;
+    height: 17px;
+  }
+
+  &--share {
+    width: 19px;
+    height: 17px;
+  }
+
+  &--addtocart {
+    width: 22px;
+    height: 21px;
+  }
+
+  &--like {
+    width: 19px;
+    height: 16px;
+  }
+
+  &--colored {
+    stroke: $accentColor;
+    fill: $accentColor;
+  }
+}
+
+.actions__btn-text {
+  vertical-align: middle;
+  color: $accentColor;
+  font-weight: bold;
+}

@@ -1,0 +1,73 @@
+.banners__title {
+  @include visuallyHidden;
+}
+
+.banners__list {
+  list-style: none;
+  margin: 0 -15px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.banners__item {
+  background: white;
+  margin: 15px;
+
+  padding: 10px 30px;
+
+  &--big {
+    width: calc(100% / 12 * 7 - 30px);
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    align-items: center;
+  }
+
+  &--small {
+    width: calc(100% / 12 * 5 - 30px);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+
+.banners__item-descr {
+  margin-bottom: 0;
+  font-size: 12px;
+  line-height: 2.504;
+}
+
+.banners__item-title {
+  font-size: 22px;
+  text-transform: uppercase;
+  font-weight: bold;
+  margin-bottom: 0;
+}
+
+.banners__item-price-btn {
+  margin-right: 10px;
+  vertical-align: middle;
+}
+
+.banners__item-price-value {
+  font-size: 32px;
+  color: $accentColor;
+  font-weight: bold;
+  vertical-align: middle;
+}
+
+.banners__item-adv-title {
+  margin-bottom: 5px;
+  span {
+    color: $accentColor;
+  }
+}
+
+.banners__item-adv-size {
+  font-size: 12px;
+  color: rgba(67, 82, 93, 0.4);
+  letter-spacing: 5px;
+  margin-bottom: 0;
+}

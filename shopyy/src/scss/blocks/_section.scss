@@ -1,0 +1,10 @@
+.section-title {
+  text-transform: uppercase;
+  color: $textColor;
+  font-weight: bold;
+  font-size: 36px;
+
+  span {
+    color: $accentColor;
+  }
+}

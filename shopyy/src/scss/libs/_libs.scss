@@ -1,0 +1,29 @@
+@import "slick/slick-theme.scss";
+@import "slick/slick.scss";
+
+
+.slick-dotted.slick-slider {
+  margin-bottom: 0;
+}
+
+.slick-dots {
+  position: static !important;
+}
+
+.slick-dots li {
+  display: list-item;
+  margin-left: 0;
+  margin-right: 0;
+  height: auto;
+
+  &:not(:last-child) {
+    margin-bottom: 15px;
+  }
+}
+
+.slick-active {
+  .index__slider-pager-bullet {
+    height: 40px;
+    background: $accentColor;
+  }
+}
