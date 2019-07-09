@@ -33,6 +33,10 @@
   }
 }
 
+.banners__item-image {
+  display: block;
+}
+
 .banners__item-descr {
   margin-bottom: 0;
   font-size: 12px;
@@ -70,4 +74,29 @@
   color: rgba(67, 82, 93, 0.4);
   letter-spacing: 5px;
   margin-bottom: 0;
+}
+
+@media screen and (max-width: 968px) {
+  .banners__item {
+    &--big,
+    &--small {
+      width: 100%;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .banners__item {
+    &--big {
+      flex-direction: column;
+    }
+  }
+
+  .banners__item-text {
+    text-align: center;
+  }
+
+  .banners__item-image {
+    margin-bottom: 15px;
+  }
 }
