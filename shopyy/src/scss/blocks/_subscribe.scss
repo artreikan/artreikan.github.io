@@ -1,0 +1,76 @@
+.subscribe {
+  padding-top: 30px;
+  padding-bottom: 100px;
+}
+
+.subscribe-wrap {
+  background: white;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  padding: 40px;
+}
+
+.subscribe__title,
+.subscribe__descr {
+  margin-bottom: 0;
+}
+
+.subscribe__title {
+  font-size: 18px;
+  font-weight: bold;
+  color: $accentColor;
+  text-transform: uppercase;
+}
+
+.subscribe__descr {
+  font-size: 14px;
+  font-style: italic;
+  margin-left: 25px;
+}
+
+
+.subscribe-form-wrap {
+  margin-left: auto;
+  position: relative;
+}
+
+.subscribe-form__icon {
+  width: 18px;
+  height: 11px;
+  display: inline-block;
+  position: absolute;
+  top: 50%;
+  left: 0;
+  transform: translateY(-50%);
+}
+
+.subscribe-form__input,
+.subscribe-form__btn {
+  padding: 15px 25px;
+  border: none;
+  font-size: 14px;
+  line-height: 1;
+}
+
+.subscribe-form__input {
+  padding-left: 30px;
+  padding-right: 0;
+  border-bottom: 1px solid transparent;
+  margin-right: 15px;
+
+  &::placeholder {
+    font-size: 14px;
+    font-style: italic;
+  }
+
+  &:focus {
+    outline: none;
+    border-bottom-color: $accentColor;
+  }
+}
+
+.subscribe-form__btn {
+  background: $accentColor;
+  color: white;
+}
