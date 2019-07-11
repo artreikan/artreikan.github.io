@@ -8,3 +8,15 @@
     color: $accentColor;
   }
 }
+
+@media screen and (max-width: 720px) {
+  .section-title {
+    font-size: 28px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-title {
+    font-size: 24px;
+  }
+}

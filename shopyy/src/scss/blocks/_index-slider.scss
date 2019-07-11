@@ -76,11 +76,31 @@ $subtitleColor: #5b6975;
   pointer-events: none;
 }
 
-.index__slider-pager-bullet {
+.index-slider__pager-bullet {
   display: block;
   width: 12px;
   height: 20px;
   background: white;
   transition: height $transitionDuration;
   pointer-events: auto;
+}
+
+@media screen and (max-width: 968px) {
+  .index-slider__item {
+    padding: 120px 0;
+  }
+  
+  .index-slider__title {
+    font-size: 48px;
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .index-slider__item {
+    padding: 80px 0;
+  }
+  
+  .index-slider__title {
+    font-size: 36px;
+  }
 }
