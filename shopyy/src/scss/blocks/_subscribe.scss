@@ -58,6 +58,7 @@
   padding-right: 0;
   border-bottom: 1px solid transparent;
   margin-right: 15px;
+  @include transition(border-color);
 
   &::placeholder {
     font-size: 14px;
@@ -73,4 +74,14 @@
 .subscribe-form__btn {
   background: $accentColor;
   color: white;
+}
+
+@media screen and (max-width: 860px) {
+  .subscribe-wrap {
+    flex-direction: column;
+  }
+
+  .subscribe-form-wrap {
+    margin-left: 0;
+  }
 }
