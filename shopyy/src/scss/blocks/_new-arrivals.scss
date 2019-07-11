@@ -61,18 +61,38 @@
 }
 
 @media screen and (max-width: 968px) {
+  .new-arrivals {
+    padding: 80px 0;
+  }
+
   .new-arrivals__item {
     width: calc(100% / 12 * 4 - 30px);
   }
 }
 
 @media screen and (max-width: 720px) {
+  .new-arrivals {
+    padding: 60px 0;
+  }
+
+  .new-arrivals__descr {
+    margin-bottom: 30px;
+  }
+
   .new-arrivals__item {
     width: calc(50% - 30px);
   }
 }
 
 @media screen and (max-width: 480px) {
+  .new-arrivals {
+    padding: 40px 0;
+  }
+
+  .new-arrivals__descr {
+    margin-bottom: 20px;
+  }
+  
   .new-arrivals__item {
     width: 100%;
   }

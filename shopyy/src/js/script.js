@@ -9,6 +9,16 @@ $(document).ready(function() {
     customPaging: function(slick, index) {
       return `<a class="index-slider__pager-bullet" aria-label="Go to ${index +
         1} slide"></a>`;
-    }
+    },
+    responsive: [
+      {
+        breakpoint: 720,
+        settings: {
+          dots: false,
+          vertical: false,
+          verticalSwiping: false
+        }
+      }
+    ]
   });
 });

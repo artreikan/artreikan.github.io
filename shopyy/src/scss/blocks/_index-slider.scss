@@ -104,3 +104,31 @@ $subtitleColor: #5b6975;
     font-size: 36px;
   }
 }
+
+@media screen and (max-width: 480px) {
+  .index-slider__item {
+    padding: 50px 0;
+  }
+
+  .index-slider__item-container {
+    padding-left: 15px;
+  }
+
+  .index-slider__title {
+    font-size: 28px;
+  }
+
+  .index-slider__subtitle {
+    font-size: 16px;
+  }
+
+  .index-slider__desc {
+    font-size: 14px;
+    margin-bottom: 20px;
+  }
+
+  .index-slider__price,
+  .index-slider__link-action {
+    font-size: 16px;
+  }
+}
