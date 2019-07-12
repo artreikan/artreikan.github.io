@@ -1,4 +1,5 @@
 $(document).ready(function() {
+  // slick slider init
   $('.index-slider__list').slick({
     vertical: true,
     verticalSwiping: true,
@@ -21,4 +22,20 @@ $(document).ready(function() {
       }
     ]
   });
+
+  let timer;
+  const $newArrivalsItem = $('.new-arrivals__item');
+  const newArrivalsItemHeight = $newArrivalsItem.outerHeight() + 'px';
+
+  $newArrivalsItem.hover(
+    function() {
+      $(this).css('height', newArrivalsItemHeight);
+      clearTimeout(timer);
+    },
+    function() {
+      timer = setInterval((function() {
+        $(this).css('height', 'auto');
+      }).bind(this), 500);
+    }
+  );
 });
