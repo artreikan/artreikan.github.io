@@ -66,6 +66,19 @@
   &:not(:last-child)::after {
     content: ' - ';
   }
+
+  label {
+    cursor: pointer;
+  }
+
+  input[type='radio'] {
+    @include visuallyHidden;
+    
+    &:checked + label {
+      color: $accentColor;
+      font-weight: bold;
+    }
+  }
 }
 
 .products-colors {
@@ -110,4 +123,10 @@
 
 .products__actions-item {
   margin: 0 16px;
+}
+
+@media screen and (max-width: 480px) {
+  .products-sizes {
+    margin-bottom: 15px;
+  }
 }

@@ -81,10 +81,26 @@
   .best-sales__item {
     width: calc(50% - 30px);
   }
+
+  .best-sales {
+    padding: 60px 0;
+  }
+
+  .best-sales__descr {
+    margin-bottom: 30px;
+  }
 }
 
 @media screen and (max-width: 480px) {
   .best-sales__item {
     width: 100%;
+  }
+
+  .best-sales {
+    padding: 40px 0;
+  }
+
+  .best-sales__descr {
+    margin-bottom: 20px;
   }
 }

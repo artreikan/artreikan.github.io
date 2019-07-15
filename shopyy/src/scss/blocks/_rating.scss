@@ -1,0 +1,8 @@
+.rating__star {
+  font-size: 18px;
+  color: #eef0f6;
+
+  &--active {
+    color: $accentColor;
+  }
+}
