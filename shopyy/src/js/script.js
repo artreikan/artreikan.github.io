@@ -29,31 +29,20 @@ $(document).ready(function() {
     ]
   });
 
-  let timer;
   const $newArrivalsItem = $('.new-arrivals__item');
   let newArrivalsItemHeight = $newArrivalsItem.outerHeight() + 'px';
 
   $(window).on('resize', function() {
     if ($(window).width() > 720) {
       $('.page-header__nav-list').removeAttr('style');
-      $('.page-header__nav-menu-btn').removeClass('page-header__nav-menu-btn--active');
-    }
-    newArrivalsItemHeight = $newArrivalsItem.outerHeight() + 'px';
-    console.log(newArrivalsItemHeight);
-  });
-
-  $newArrivalsItem.hover(
-    function() {
-      $(this).css('height', newArrivalsItemHeight);
-      clearTimeout(timer);
-    },
-    function() {
-      timer = setInterval(
-        function() {
-          $(this).css('height', 'auto');
-        }.bind(this),
-        500
+      $('.page-header__nav-menu-btn').removeClass(
+        'page-header__nav-menu-btn--active'
       );
     }
-  );
+    newArrivalsItemHeight = $newArrivalsItem.outerHeight() + 'px';
+  });
+
+  $newArrivalsItem.hover(function() {
+    $(this).css('height', newArrivalsItemHeight);
+  });
 });
