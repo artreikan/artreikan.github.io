@@ -8,7 +8,6 @@ $(document).ready(function() {
   // slick slider init
   $('.index-slider__list').slick({
     vertical: true,
-    verticalSwiping: true,
     autoplay: true,
     arrows: false,
     dots: true,
@@ -23,14 +22,13 @@ $(document).ready(function() {
         settings: {
           dots: false,
           vertical: false,
-          verticalSwiping: false
         }
       }
     ]
   });
 
-  const $newArrivalsItem = $('.new-arrivals__item');
-  let newArrivalsItemHeight = $newArrivalsItem.outerHeight() + 'px';
+  const $productsItem = $('.products-item');
+  let productsItemHeight = $productsItem.outerHeight() + 'px';
 
   $(window).on('resize', function() {
     if ($(window).width() > 720) {
@@ -39,10 +37,10 @@ $(document).ready(function() {
         'page-header__nav-menu-btn--active'
       );
     }
-    newArrivalsItemHeight = $newArrivalsItem.outerHeight() + 'px';
+    productsItemHeight = $productsItem.outerHeight() + 'px';
   });
 
-  $newArrivalsItem.hover(function() {
-    $(this).css('height', newArrivalsItemHeight);
+  $productsItem.hover(function() {
+    $(this).css('height', productsItemHeight);
   });
 });

@@ -82,6 +82,10 @@
 }
 
 @media screen and (max-width: 860px) {
+  .subscribe {
+    padding-bottom: 80px;
+  }
+  
   .subscribe-wrap {
     flex-direction: column;
   }
