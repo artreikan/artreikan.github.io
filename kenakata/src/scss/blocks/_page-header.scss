@@ -1,0 +1,157 @@
+.page-header-nav {
+  padding: 30px 0;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.page-header-nav__list {
+  margin: 0;
+  margin-left: 30px;
+  list-style: none;
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+}
+
+.page-header-nav__item {
+  &:not(:last-child) {
+    margin-right: 20px;
+  }
+}
+
+.page-header-nav__link {
+  font-size: 15px;
+  color: inherit;
+  font-weight: 600;
+  transition: color $duration;
+
+  &:hover {
+    color: $accentColor;
+  }
+}
+
+.page-header__cart {
+  margin-left: auto;
+  position: relative;
+}
+
+.page-header__cart-btn {
+  background: none;
+  border: none;
+  box-shadow: none;
+}
+
+.page-header__cart-count {
+  position: absolute;
+  bottom: -10px;
+  right: -5px;
+  background: $accentColor;
+  color: #fff;
+  font-size: 12px;
+  line-height: 20px;
+  font-weight: bold;
+  width: 20px;
+  height: 20px;
+  text-align: center;
+  border-radius: 50%;
+}
+
+.page-header-main {
+  padding: 150px 0;
+  background: #ffffff;
+  background: linear-gradient(to right, #ffffff 50%, #f8f8f8 50%);
+  overflow: hidden;
+  position: relative;
+}
+
+.page-header-main__img {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  @include fluidImage;
+}
+
+.page-header-main__container {
+  display: flex;
+  align-items: flex-start;
+}
+
+.page-header-main__info {
+  align-self: center;
+  max-width: 60%;
+  position: relative;
+  z-index: 2;
+}
+
+.page-header-main__title {
+  @include loraFont;
+  font-weight: 400;
+  color: $headerColor;
+  font-size: 80px;
+  line-height: 1.25;
+}
+
+.page-header-main__desc {
+  font-size: 18px;
+  line-height: 1.667;
+  margin-bottom: 30px;
+}
+
+@media screen and (max-width: 968px) {
+  .page-header-main {
+    padding: 90px 0;
+    background: #f8f8f8;
+  }
+
+  .page-header-main__title {
+    font-size: 72px;
+  }
+
+  .page-header-main__img {
+    left: 0;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .page-header-main {
+    padding: 50px 0;
+  }
+
+  .page-header-main__title {
+    font-size: 60px;
+  }
+
+  .page-header-main__img {
+    opacity: 0.5;
+  }
+
+  .page-header-main__info {
+    max-width: 100%;
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .page-header-main__title {
+    font-size: 48px;
+  }
+
+  .page-header-main__desc {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .page-header-main {
+    padding: 40px 0;
+  }
+  .page-header-main__title {
+    font-size: 32px;
+  }
+
+  .page-header-main__desc {
+    font-size: 16px;
+    margin-bottom: 20px;
+  }
+}

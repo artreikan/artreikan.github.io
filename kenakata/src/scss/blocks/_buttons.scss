@@ -1,0 +1,23 @@
+.btn {
+  display: inline-block;
+  cursor: pointer;
+  border: none;
+  background: transparent;
+  box-shadow: none;
+  padding: 10px 45px;
+
+  &--primary {
+    @include loraFont;
+    background: $accentColor;
+    color: #fff;
+    box-shadow: 0 5px 30px 0 rgba(31, 35, 37, 0.25);
+    border-radius: 3px;
+    transition: box-shadow $duration, transform $duration;
+
+    &:hover {
+      color: #fff;
+      box-shadow: 0 5px 35px 0 rgba(31, 35, 37, 0.15);
+      transform: translateY(-5px);
+    }
+  }
+}

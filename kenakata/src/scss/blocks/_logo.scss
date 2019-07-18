@@ -1,0 +1,14 @@
+.logo__link {
+  font-size: 22px;
+  font-family: 'Muli', sans-serif;
+  color: $headerColor;
+  transition: color $duration;
+  text-transform: uppercase;
+  font-weight: bold;
+  letter-spacing: 1px;
+
+  &:hover {
+    color: lighten($headerColor, 20);
+  }
+}
+
