@@ -1,0 +1,74 @@
+$hamburgerColor: #e9eae2;
+$hamburgerColorActive: #f8c255;
+
+.hamburger {
+  display: block;
+  background: none;
+  border: 3px solid $hamburgerColor;
+  transition: all 0.4s;
+  position: relative;
+  z-index: 2;
+
+  &--active {
+    border-color: $hamburgerColorActive;
+
+    .hamburger__line {
+      background: $white;
+      transform: rotate(45deg);
+
+      &:hover {
+        background: $white;
+
+        ::after,
+        ::before {
+          background: $white;
+        }
+      }
+
+      &::after {
+        transform: rotate(-90deg);
+        background: $white;
+      }
+
+      &::before {
+        display: none;
+      }
+    }
+  }
+
+  &:hover,
+  &:active {
+    border-color: $hamburgerColorActive;
+    background: $hamburgerColorActive;
+  }
+}
+
+.hamburger__line {
+  width: 40px;
+  height: 3px;
+  background: $hamburgerColor;
+  display: block;
+  margin: 0 auto;
+  transition: all 0.4s;
+  position: relative;
+  z-index: 2;
+
+  &::before,
+  &::after {
+    content: "";
+    width: 40px;
+    height: 3px;
+    background: $hamburgerColor;
+    display: block;
+    margin: 0 auto;
+    transition: all 0.4s;
+  }
+
+  &::before {
+    transform: translateY(-8px);
+  }
+
+  &::after {
+    transform: translateY(5px);
+  }
+}

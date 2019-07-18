@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>DSGN</title>
+    <link rel="stylesheet" href="dist/css/style.css" />
+  </head>
+
+  <body>
+    <header class="page-header">
+      <div class="page-header__left">
+        <img
+          class="logo page-header__logo"
+          src="dist/img/logo.png"
+          srcset="dist/img/logo.png 1x, dist/img/logo-2x.png 2x"
+          alt="Логотип"
+        />
+        <p class="page-header__tagline">
+          associates
+          <br />
+          studio
+          <br />
+          design
+        </p>
+        <ul class="page-header__socials socials">
+          <li class="socials__item">
+            <a href="#fb" class="socials__link" aria-label="Facebook">
+              <svg class="socials__icon socials__icon--fb">
+                <use xlink:href="dist/img/symbol/sprite.svg#fb"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#twitter" class="socials__link" aria-label="Twitter">
+              <svg class="socials__icon socials__icon--twitter">
+                <use xlink:href="dist/img/symbol/sprite.svg#twitter"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a href="#linkedin" class="socials__link" aria-label="Linkedin">
+              <svg class="socials__icon socials__icon--linkedin">
+                <use xlink:href="dist/img/symbol/sprite.svg#linked"></use>
+              </svg>
+            </a>
+          </li>
+          <li class="socials__item">
+            <a
+              href="#google-plus"
+              class="socials__link"
+              aria-label="Google Plus"
+            >
+              <svg class="socials__icon socials__icon--google">
+                <use xlink:href="dist/img/symbol/sprite.svg#google"></use>
+              </svg>
+            </a>
+          </li>
+        </ul>
+      </div>
+      <!-- /.page-header__left -->
+
+      <div class="page-header__right">
+        <p class="page-header__address">
+          90802 California
+          <br />
+          Long beach
+          <br />
+          PO Box 68789
+          <br />
+          300 East Ocean
+          <br />
+          Boulevard
+        </p>
+        <p class="page-header__contacts">
+          <a class="page-header__tel" href="tel:+6493456758">+64 9 345 6758</a>
+          <a class="page-header__mail" href="mailto:info@dsgn-studio.com">
+            info@dsgn-studio.com
+          </a>
+        </p>
+      </div>
+      <!-- /.page-header__right -->
+
+      <nav class="menu page-header__menu">
+        <ul class="menu__list">
+          <li class="menu__item">
+            <a href="#hove" class="menu__link">Home</a>
+          </li>
+          <li class="menu__item">
+            <a href="#hove" class="menu__link">Projects</a>
+          </li>
+          <li class="menu__item">
+            <a href="#hove" class="menu__link">Studio</a>
+          </li>
+          <li class="menu__item">
+            <a href="#hove" class="menu__link">News</a>
+          </li>
+          <li class="menu__item">
+            <a href="#hove" class="menu__link">Contact</a>
+          </li>
+        </ul>
+        <button class="hamburger menu__hamburger" aria-label="Menu button">
+          <span class="hamburger__line"></span>
+        </button>
+      </nav>
+      <!-- /.menu -->
+    </header>
+    <!-- /.page-header -->
+
+    <section class="projects">
+      <div class="projects__item projects__item--first">
+        <ul class="links projects__links">
+          <li class="links__item">
+            <a href="" class="links__link">All</a>
+          </li>
+          <li class="links__item">
+            <a href="" class="links__link">House</a>
+          </li>
+          <li class="links__item">
+            <a href="" class="links__link">Commercial</a>
+          </li>
+          <li class="links__item">
+            <a href="" class="links__link">Personal</a>
+          </li>
+          <li class="links__item">
+            <a href="" class="links__link">Studio Lab</a>
+          </li>
+        </ul>
+        <h2 class="section-title projects__title">
+          Projects
+        </h2>
+      </div>
+
+      <div class="projects__item projects__item--second">
+        <div class="projects__info">
+          <h3 class="projects__info-title">FONDUE</h3>
+          <dl class="project__info-description">
+            <dt>Project Assistant:</dt>
+            <dd>Francesco Dompieri</dd>
+            <dt>Material:</dt>
+            <dd>Glass and Metal</dd>
+            <dt>Typology:</dt>
+            <dd>Suspension lamp</dd>
+            <dt>Client:</dt>
+            <dd>David Design</dd>
+            <dt>Year: </dt>
+            <dd>2014</dd>
+          </dl>
+        </div>
+        <div class="projects__buttons">
+          <a href="#" class="projects__button btn-more">
+            View project
+          </a>
+          <button href="#" class="projects__button btn-like" aria-label="Like button">
+            <svg class="btn-like__icon">
+              <use xlink:href="dist/img/symbol/sprite.svg#heart"></use>
+            </svg>
+            <span class="btn-like__count">+200</span>
+          </button>
+        </div>
+      </div>
+    </section>
+    <!-- /.projects -->
+
+    <script defer src="dist/js/main.js"></script>
+  </body>
+</html>
