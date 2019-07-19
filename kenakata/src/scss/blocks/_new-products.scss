@@ -10,3 +10,31 @@
 .new-products__list {
   margin-bottom: 40px;
 }
+
+@media screen and (max-width: 768px) {
+  .new-products {
+    padding: 60px 0;
+  }
+
+  .new-products__descr {
+    margin-bottom: 40px;
+  }
+
+  .new-products__list {
+    margin-bottom: 30px;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .new-products {
+    padding: 40px 0;
+  }
+
+  .new-products__descr {
+    margin-bottom: 30px;
+  }
+
+  .new-products__list {
+    margin-bottom: 15px;
+  }
+}
