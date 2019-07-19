@@ -1,40 +1,40 @@
-.fetured-products {
+.featured-products {
   padding: 80px 0;
   text-align: center;
 }
 
-.fetured-products__descr {
+.featured-products__descr {
   margin-bottom: 60px;
 }
 
-.fetured-products__list {
+.featured-products__list {
   margin-bottom: 40px;
 }
 
 @media screen and (max-width: 768px) {
-  .fetured-products {
+  .featured-products {
     padding: 60px 0;
   }
 
-  .fetured-products__descr {
+  .featured-products__descr {
     margin-bottom: 40px;
   }
 
-  .fetured-products__list {
+  .featured-products__list {
     margin-bottom: 30px;
   }
 }
 
 @media screen and (max-width: 600px) {
-  .fetured-products {
+  .featured-products {
     padding: 40px 0;
   }
 
-  .fetured-products__descr {
+  .featured-products__descr {
     margin-bottom: 30px;
   }
 
-  .fetured-products__list {
+  .featured-products__list {
     margin-bottom: 15px;
   }
 }
