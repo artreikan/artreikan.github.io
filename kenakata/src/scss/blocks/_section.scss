@@ -1,0 +1,17 @@
+.section-title,
+.section-descr {
+  text-align: center;
+  line-height: 1.2;
+}
+
+.section-title {
+  font-size: 35px;
+  color: $headerColor;
+  @include loraFont;
+}
+
+.section-descr {
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
+}

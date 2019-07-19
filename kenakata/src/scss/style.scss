@@ -3,8 +3,15 @@
 @import 'variables';
 @import 'mixins';
 @import 'core';
+@import 'anims';
+
+// libs
+@import 'libs/aos';
 
 // blocks
+@import 'blocks/section';
 @import 'blocks/buttons';
 @import 'blocks/logo';
+@import 'blocks/products';
 @import 'blocks/page-header';
+@import 'blocks/new-products';
