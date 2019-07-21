@@ -1,7 +1,12 @@
 .section-title,
 .section-descr {
   text-align: center;
-  line-height: 1.2;
+}
+
+.section-descr {
+  line-height: 1.6667;
+  width: 50%;
+  margin: 0 auto;
 }
 
 .section-title {
@@ -14,4 +19,10 @@
   font-size: 12px;
   font-weight: 300;
   text-transform: uppercase;
+}
+
+@media screen and (max-width: 600px) {
+  .section-title {
+    font-size: 24px;
+  }
 }
