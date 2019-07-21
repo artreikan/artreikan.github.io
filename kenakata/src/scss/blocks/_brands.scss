@@ -39,6 +39,8 @@
 
 .brands__image {
   @include fluidImage;
+  display: block;
+  margin: 0 auto;
 }
 
 @media screen and (max-width: 825px) {
