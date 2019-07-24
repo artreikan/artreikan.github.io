@@ -5,8 +5,11 @@
 
 .section-descr {
   line-height: 1.6667;
-  width: 50%;
+  width: 45%;
   margin: 0 auto;
+  font-size: 12px;
+  font-weight: 300;
+  text-transform: uppercase;
 }
 
 .section-title {
@@ -15,14 +18,24 @@
   @include loraFont;
 }
 
-.section-descr {
-  font-size: 12px;
-  font-weight: 300;
-  text-transform: uppercase;
+@media screen and (max-width: 780px) {
+  .section-descr {
+    width: 60%;
+  }
 }
 
 @media screen and (max-width: 600px) {
   .section-title {
     font-size: 24px;
+  }
+
+  .section-descr {
+    width: 80%;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section-descr {
+    width: 100%;
   }
 }
