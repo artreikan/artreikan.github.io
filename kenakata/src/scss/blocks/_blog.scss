@@ -58,7 +58,7 @@
     color: $accentColor;
   }
 
-  &:hover + .blog__item-link-ic {
+  &:hover .blog__item-link-ic {
     transform: translate(3px);
   }
 }
