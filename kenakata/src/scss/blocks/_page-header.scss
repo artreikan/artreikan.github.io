@@ -187,11 +187,10 @@
     text-align: center;
     z-index: 100;
     background: #fff;
-    transition: right 0.6s, box-shadow $duration;
+    transition: right 0.6s;
 
     &.active {
       right: 0;
-      box-shadow: -30px 0px 100px 5px rgba(0, 0, 0, 0.5);
     }
   }
 

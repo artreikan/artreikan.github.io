@@ -8,6 +8,7 @@ document.addEventListener(
     navBtn.addEventListener('click', function(e) {
       e.preventDefault();
       navList.classList.add('active');
+      document.body.classList.add('overlay');
     });
 
     window.addEventListener('click', function(e) {
@@ -26,6 +27,7 @@ document.addEventListener(
         !classList.contains('page-header-nav__list')
       ) {
         navList.classList.remove('active');
+        document.body.classList.remove('overlay');
       }
     });
   },
