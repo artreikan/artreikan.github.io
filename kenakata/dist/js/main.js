@@ -1,1 +1,1 @@
-"use strict";
+"use strict";document.addEventListener("DOMContentLoaded",function(){var e=document.querySelector(".page-header-nav__btn"),t=document.querySelector(".page-header-nav__list");e.addEventListener("click",function(e){e.preventDefault(),t.classList.add("active")}),window.addEventListener("click",function(e){var n=e.target.classList;!t.classList.contains("active")||n.contains("page-header-nav__btn")||n.contains("btn__line")||!n.contains("page-header-nav__link")&&n.contains("page-header-nav__list")||t.classList.remove("active")})},!1);
