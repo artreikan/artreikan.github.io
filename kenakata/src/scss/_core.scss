@@ -33,3 +33,7 @@ a:hover {
   padding: 0 15px;
   margin: 0 auto;
 }
+
+.preload * {
+  transition: none !important;
+}

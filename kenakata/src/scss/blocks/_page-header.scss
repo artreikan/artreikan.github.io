@@ -189,10 +189,11 @@
     background: #fff;
     transform: translateX(100%);
     transition: transform $duration, box-shadow $duration;
+    will-change: transform;
 
     &.active {
       transform: translateX(0);
-      box-shadow: -30px 0px 100px 5px rgba(0,0,0,0.5);
+      box-shadow: -30px 0px 100px 5px rgba(0, 0, 0, 0.5);
     }
   }
 
@@ -207,6 +208,10 @@
   .page-header-nav__link {
     display: block;
     padding: 20px 0;
+  }
+
+  .page-header__cart-count {
+    bottom: -5px;
   }
 
   .page-header-nav__btn {
