@@ -6,15 +6,29 @@
   border-radius: 3px;
   line-height: 1;
   padding: 10px 20px;
+  transition: background $duration;
 
   &--red {
     background: $bgColor3;
     color: white;
-    transition: background $duration;
 
     &:hover {
       color: white;
       background: lighten($bgColor3, 10%);
     }
+  }
+
+  &--yellow {
+    background: $bgColor4;
+    color: white;
+
+    &:hover {
+      color: white;
+      background: darken($bgColor4, 10%);
+    }
+  }
+
+  &--uppercase {
+    text-transform: uppercase;
   }
 }

@@ -1,0 +1,34 @@
+.hero {
+  background: $bgColor1 url(../img/hero-bg.jpg) no-repeat top;
+  background-size: cover;
+  color: #fff;
+  padding: 175px 0;
+}
+
+.hero-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.hero__about {
+  text-align: center;
+}
+
+.hero__title {
+  text-align: center;
+  font-size: 48px;
+  margin-bottom: 25px;
+
+  span {
+    font-size: 30px;
+    display: block;
+    font-weight: normal;
+  }
+}
+
+.hero__btn {
+  font-weight: bold;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}

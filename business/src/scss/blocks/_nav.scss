@@ -24,6 +24,8 @@
 
 .nav__link {
   transition: color $duration;
+  text-transform: capitalize;
+  
   &--active,
   &:hover {
     color: $bgColor3;

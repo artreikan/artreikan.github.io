@@ -1,11 +1,11 @@
 .page-header__top {
   background: $bgColor1;
   border-bottom: 1px solid $borderColor;
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-  }
+}
+.page-header-container {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
 }
 
 .page-header__contacts {
@@ -15,12 +15,6 @@
 .page-header__bottom {
   padding-top: 40px;
   padding-bottom: 40px;
-
-  .container {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-  }
 }
 
 .page-header-nav {
