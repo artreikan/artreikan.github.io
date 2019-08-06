@@ -38,3 +38,49 @@
   padding-top: 15px;
   padding-bottom: 15px;
 }
+
+@media screen and (max-width: 720px) {
+  .hero__title {
+    font-size: 42px;
+  
+    span {
+      font-size: 26px;
+    }
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .hero__title {
+    font-size: 36px;
+    margin-bottom: 15px;
+
+    span {
+      font-size: 22px;
+    }
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .hero__title {
+    font-size: 32px;
+  
+    span {
+      font-size: 18px;
+    }
+  }
+
+}
+
+@media screen and (max-width: 360px) {
+  .hero__title {
+    font-size: 26px;
+  
+    span {
+      font-size: 15px;
+    }
+  }
+
+  .hero__btn {
+    font-size: 14px;
+  }
+}

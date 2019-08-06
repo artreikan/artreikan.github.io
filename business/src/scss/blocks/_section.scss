@@ -1,0 +1,28 @@
+.section {
+  padding: 105px 0;
+}
+
+.section__title,
+.section__descr {
+  text-align: center;
+}
+
+.section__title {
+  font-size: 36px;
+  font-weight: bold;
+  text-transform: capitalize;
+}
+
+.section__descr {
+  font-size: 20px;
+  position: relative;
+
+  &--with-line::after {
+    content: '';
+    height: 3px;
+    width: 45px;
+    background: $textColor;
+    bottom: -15px;
+    @include centerX;
+  }
+}
