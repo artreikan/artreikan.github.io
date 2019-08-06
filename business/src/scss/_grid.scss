@@ -1,0 +1,23 @@
+$container-width: 1024px;
+$gap: 30px;
+$cols: 6;
+
+@mixin container() {
+  max-width: $container-width;
+  margin-left: auto;
+  margin-right: auto;
+  padding: 0 15px;
+}
+
+@mixin row() {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -($gap / 2);
+  margin-right: -($gap / 2);
+}
+
+@mixin col($count) {
+  width: calc(100% / $cols * $count - $gap);
+  margin-left: $gap / 2;
+  margin-right: $gap / 2;
+}

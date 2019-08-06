@@ -2,17 +2,23 @@
   background: $bgColor1 url(../img/hero-bg.jpg) no-repeat top;
   background-size: cover;
   color: #fff;
-  padding: 175px 0;
+  height: 0;
+  padding-bottom: 56.25%;
+  position: relative;
 }
 
 .hero-container {
+  position: absolute;
+  left: 0;
+  right: 0;
+  top: 0;
+  height: 100%;
   display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .hero__about {
   text-align: center;
+  margin: auto;
 }
 
 .hero__title {
