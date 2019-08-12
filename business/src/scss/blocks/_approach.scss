@@ -42,6 +42,7 @@
 .approach__item-image {
   @include col(2, $useMargin: false);
   position: relative;
+  align-self: center;
 }
 
 .approach__item-pic {
