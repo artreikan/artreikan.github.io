@@ -1,0 +1,55 @@
+.works {
+  background-color: $bgColor3;
+  color: #fff;
+}
+
+.works__descr {
+  margin-bottom: 65px;
+  
+  &::after {
+    background: #fff;
+  }
+}
+
+.works__list {
+  @include row($useMargin: false);
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.works__item {
+  @include col(3, $useMargin: false);
+  display: flex;
+  flex-wrap: wrap;
+
+  &--reverse {
+    flex-direction: row-reverse;
+  }
+}
+
+.works__item-text,
+.works__item-img {
+  width: 50%;
+}
+
+.works__item-text {
+  background-color: #f35e59;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+.works__item-ic {
+  display: block;
+  opacity: 0.5;
+  margin-bottom: 15px;
+}
+
+.works__item-img img {
+  @include fluidImage;
+  display: block;
+  object-fit: cover;
+  height: 100%;
+}
