@@ -5,7 +5,7 @@
 
 .works__descr {
   margin-bottom: 65px;
-  
+
   &::after {
     background: #fff;
   }
@@ -39,6 +39,12 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.works__item-title {
+  line-height: 1;
 }
 
 .works__item-ic {
@@ -48,8 +54,34 @@
 }
 
 .works__item-img img {
-  @include fluidImage;
   display: block;
   object-fit: cover;
   height: 100%;
+  width: 100%;
+}
+
+@media screen and (max-width: 720px) {
+  .works__item {
+    @include col(6, $useMargin: false);
+
+    &--reverse {
+      flex-direction: row;
+    }
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+}
+
+@media screen and (max-width: 420px) {
+  .works__item,
+  .works__item--reverse {
+    flex-direction: column-reverse;
+  }
+
+  .works__item-text,
+  .works__item-img {
+    width: 100%;
+  }
 }
