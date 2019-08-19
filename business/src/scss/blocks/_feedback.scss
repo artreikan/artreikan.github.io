@@ -1,0 +1,64 @@
+.feedback {
+  background: $bgColor2;
+  color: #fff;
+}
+
+.feedback__descr {
+  margin-bottom: 45px;
+}
+
+.form-wrap__descr {
+  margin-bottom: 30px;
+}
+
+.feedback-form-wrap {
+  @include col(4, $useMargin: false);
+  background: #fff;
+  margin: auto;
+  padding: 50px;
+  text-align: center;
+  border-radius: 3px;
+  color: $textColor;
+}
+
+.feedback-form__input {
+  display: block;
+  width: 80%;
+  margin: 0 auto 7px auto;
+  padding: 12px;
+  border-radius: 3px;
+  border: 1px solid lighten($textColor, 50%);
+
+  &:focus {
+    box-shadow: 0px 0px 3px 0px rgba(0, 0, 0, 0.3);
+  }
+}
+
+.feedback-form__btn {
+  padding: 15px 25px;
+  margin-top: 15px;
+  font-size: 15px;
+  font-weight: bold;
+}
+
+@media screen and (max-width: 880px) {
+  .feedback-form-wrap {
+    @include col(6, $useMargin: false);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .feedback-form-wrap {
+    padding: 35px;
+  }
+
+  .feedback-form__input {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .feedback-form-wrap {
+    padding: 25px;
+  }
+}
