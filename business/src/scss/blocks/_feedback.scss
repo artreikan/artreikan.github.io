@@ -4,11 +4,15 @@
 }
 
 .feedback__descr {
-  margin-bottom: 45px;
+  margin-bottom: 65px;
+
+  &::after {
+    background: #fff;
+  }
 }
 
 .form-wrap__descr {
-  margin-bottom: 30px;
+  margin-bottom: 35px;
 }
 
 .feedback-form-wrap {
