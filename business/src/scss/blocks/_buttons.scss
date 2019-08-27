@@ -8,6 +8,17 @@
   padding: 10px 20px;
   transition: background $duration;
 
+  &--bordered {
+    border: 1px solid $textColor;
+    border-radius: 3px;
+    color: #fff;
+    transition: border-color $duration;
+
+    &:hover {
+      border-color: $bgColor3;
+    }
+  }
+
   &--red {
     background: $bgColor3;
     color: white;

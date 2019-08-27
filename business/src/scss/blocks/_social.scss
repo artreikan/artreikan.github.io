@@ -1,0 +1,35 @@
+.social {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+.social__item {
+  margin-left: 10px;
+  margin-right: 10px;
+}
+
+.social__link {
+  color: #fff;
+  font-size: 18px;
+  display: inline-block;
+  line-height: 1;
+  width: 40px;
+  height: 40px;
+  border: 1px solid $textColor;
+  border-radius: 3px;
+  position: relative;
+  transition: border-color $duration;
+
+  &:hover {
+    color: #fff;
+    border-color: $bgColor3;
+  }
+}
+
+.social__link-ic {
+  @include centerBoth;
+}
