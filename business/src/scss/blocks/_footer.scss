@@ -1,0 +1,11 @@
+.page-footer {
+  background: $textColor;
+  padding: 25px;
+}
+
+.page-footer__copy {
+  margin: 0;
+  line-height: 1;
+  text-align: center;
+  color: darken(#fff, 20%);
+}
