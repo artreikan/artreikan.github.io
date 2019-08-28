@@ -1,4 +1,5 @@
 document.addEventListener('DOMContentLoaded', function () {
+  // mobile menu
   const openMenuBtn = document.querySelector('.page-header__open-btn');
   const menu = document.querySelector('.page-header-nav');
   const body = document.body;
@@ -18,4 +19,20 @@ document.addEventListener('DOMContentLoaded', function () {
       body.classList.remove('overlay');
     }
   }, true);
+
+  // smooth scroll
+  menu.addEventListener('click', function (e) {
+    if (e.target.tagName !== 'A') {
+      return;
+    }
+
+    e.preventDefault();
+
+    const blockId = e.target.getAttribute('href');
+
+    document.querySelector(blockId).scrollIntoView({
+      behavior: "smooth",
+      block: "start"
+    });
+  })
 });
