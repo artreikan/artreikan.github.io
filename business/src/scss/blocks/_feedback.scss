@@ -11,7 +11,7 @@
   }
 }
 
-.form-wrap__descr {
+.feedback-form-wrap__descr {
   margin-bottom: 35px;
 }
 
@@ -60,6 +60,10 @@
     padding: 35px;
   }
 
+  .feedback-form-wrap__descr {
+    margin-bottom: 25px;
+  }
+
   .feedback-form__input {
     width: 100%;
   }
@@ -68,5 +72,9 @@
 @media screen and (max-width: 400px) {
   .feedback-form-wrap {
     padding: 25px;
+  }
+
+  .feedback-form-wrap__descr {
+    margin-bottom: 15px;
   }
 }

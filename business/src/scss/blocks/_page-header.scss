@@ -24,3 +24,10 @@
 .page-header__btn {
   margin-left: 40px;
 }
+
+@media screen and (max-width: 860px) {
+  .page-header__bottom {
+    padding-top: 25px;
+    padding-bottom: 25px;
+  }
+}

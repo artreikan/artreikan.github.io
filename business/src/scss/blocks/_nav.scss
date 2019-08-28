@@ -31,3 +31,11 @@
     color: $bgColor3;
   }
 }
+
+@media screen and (max-width: 860px){
+  .nav__item {
+    &::after {
+      display: none;
+    }
+  }
+}
