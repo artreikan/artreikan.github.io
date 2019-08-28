@@ -43,3 +43,13 @@
 .get-in-touch-form__btn {
   padding: 15px 30px;
 }
+
+@media screen and (max-width: 600px) {
+  .get-in-touch {
+    padding: 50px 0;
+  }
+
+  .get-in-touch-form__input {
+    @include col(6, false);
+  }
+}

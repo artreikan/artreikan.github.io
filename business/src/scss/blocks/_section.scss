@@ -26,3 +26,37 @@
     @include centerX;
   }
 }
+
+@media screen and (max-width: 720px) {
+  .section {
+    padding: 80px 0;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .section {
+    padding: 50px 0;
+  }
+
+  .section__title {
+    font-size: 29px;
+  }
+
+  .section__descr {
+    font-size: 18px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .section {
+    padding: 40px 0;
+  }
+
+  .section__title {
+    font-size: 24px;
+  }
+
+  .section__descr {
+    font-size: 16px;
+  }
+}

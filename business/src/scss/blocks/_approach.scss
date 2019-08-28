@@ -18,8 +18,8 @@
   background: #fff;
   border-radius: 5px;
   overflow: hidden;
-  box-shadow: 0px 0px 1px 0px rgba(0, 0, 0, 0.3);
-  
+  box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
+
   &:not(:last-child) {
     margin-bottom: 30px;
   }
@@ -32,7 +32,7 @@
       padding-right: 70px;
       padding-left: 40px;
     }
-    
+
     .approach__item-step {
       right: auto;
       left: -50px;
@@ -51,7 +51,6 @@
 }
 
 .approach__item-step {
-  position: absolute;
   @include centerY;
   right: -50px;
   background: $bgColor3;
@@ -81,13 +80,26 @@
   display: flex;
   flex-direction: column;
   justify-content: center;
-  padding-left: 70px;
-  padding-right: 40px;
-  padding-top: 20px;
-  padding-bottom: 20px;
+  padding: 20px 40px 20px 70px;
 }
 
 .approach__item-descr {
   margin-bottom: 0;
   font-size: 14px;
+}
+
+@media screen and (max-width: 700px) {
+  .approach__item-image {
+    @include col(3, $useMargin: false);
+  }
+
+  .approach__item-text {
+    @include col(3, $useMargin: false);
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .approach__descr {
+    margin-bottom: 45px;
+  }
 }

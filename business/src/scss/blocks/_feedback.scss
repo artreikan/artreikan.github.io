@@ -52,6 +52,10 @@
 }
 
 @media screen and (max-width: 600px) {
+  .feedback__descr {
+    margin-bottom: 45px;
+  }
+
   .feedback-form-wrap {
     padding: 35px;
   }

@@ -78,6 +78,12 @@
   }
 }
 
+@media screen and (max-width: 600px) {
+  .works__descr {
+    margin-bottom: 45px;
+  }
+}
+
 @media screen and (max-width: 420px) {
   .works__item,
   .works__item--reverse {
