@@ -2,6 +2,7 @@
   background: $bgColor1;
   border-bottom: 1px solid $borderColor;
 }
+
 .page-header-container {
   display: flex;
   flex-wrap: wrap;
@@ -25,9 +26,48 @@
   margin-left: 40px;
 }
 
+.page-header__open-btn {
+  color: $textColor;
+  width: 30px;
+  height: 30px;
+  margin-left: 20px;
+  padding-right: 10px;
+  padding-left: 10px;
+  border-color: $bgColor1;
+  display: none;
+  position: relative;
+
+  i {
+    @include centerBoth;
+  }
+}
+
 @media screen and (max-width: 860px) {
   .page-header__bottom {
     padding-top: 25px;
     padding-bottom: 25px;
+  }
+
+  .page-header-nav {
+    position: fixed;
+    right: -100%;
+    top: 0;
+    bottom: 0;
+    width: 200px;
+    background: #fff;
+    z-index: 100;
+    transition: right 0.6s;
+
+    &.active {
+      right: 0;
+    }
+  }
+
+  .page-header__btn {
+    margin-left: auto;
+  }
+
+  .page-header__open-btn {
+    display: block;
   }
 }

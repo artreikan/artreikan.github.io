@@ -12,19 +12,19 @@ document.addEventListener(
     });
 
     window.addEventListener('click', function(e) {
-      const classList = e.target.classList;
+      const targetClassList = e.target.classList;
 
       if (
         !navList.classList.contains('active') ||
-        classList.contains('page-header-nav__btn') ||
-        classList.contains('btn__line')
+        targetClassList.contains('page-header-nav__btn') ||
+        targetClassList.contains('btn__line')
       ) {
         return;
       }
 
       if (
-        classList.contains('page-header-nav__link') ||
-        !classList.contains('page-header-nav__list')
+        targetClassList.contains('page-header-nav__link') ||
+        !targetClassList.contains('page-header-nav__list')
       ) {
         navList.classList.remove('active');
         document.body.classList.remove('overlay');
