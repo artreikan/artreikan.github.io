@@ -26,6 +26,14 @@
   margin-left: 40px;
 }
 
+.page-header__btn-text {
+  display: inline;
+}
+
+.page-header__btn-ic {
+  display: none;
+}
+
 .page-header__open-btn {
   color: $textColor;
   width: 30px;
@@ -69,5 +77,27 @@
 
   .page-header__open-btn {
     display: block;
+  }
+}
+
+@media screen and (max-width: 600px) {
+  .page-header__btn {
+    padding: 10px;
+    width: 30px;
+    height: 30px;
+    position: relative;
+  }
+
+  .page-header__btn-text {
+    display: none;
+  }
+
+  .page-header__btn-ic {
+    display: inline;
+    @include centerBoth;
+  }
+
+  .page-header__open-btn {
+    margin-left: 15px;
   }
 }

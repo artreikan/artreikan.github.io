@@ -31,7 +31,10 @@
   <div class="page-header__bottom">
     <div class="container page-header-container">
       <a href="/" class="logo">
-        <img src="dist/img/logo.png" alt="Logo" class="logo__image">
+        <picture>
+          <source srcset="dist/img/logo-mobile.png" media="(max-width: 600px)">
+          <img src="dist/img/logo.png" alt="Logo" class="logo__image">
+        </picture>
       </a>
       <nav class="nav page-header-nav">
         <ul class="nav__list">
@@ -49,7 +52,10 @@
           </li>
         </ul>
       </nav>
-      <a href="#!" class="btn page-header__btn btn--red">Free Consultation</a>
+      <a href="#!" class="btn page-header__btn btn--red">
+        <span class="page-header__btn-text">Free Consultation</span>
+        <i class="fa fa-phone page-header__btn-ic" aria-hidden="true"></i>
+      </a>
       <button class="btn btn--bordered page-header__open-btn" aria-label="Open menu">
         <i class="fa fa-bars fa-lg" aria-hidden="true"></i>
       </button>
