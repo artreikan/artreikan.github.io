@@ -93,13 +93,59 @@
     @include col(3, $useMargin: false);
   }
 
+  .approach__item-step {
+    display: none;
+  }
+
   .approach__item-text {
     @include col(3, $useMargin: false);
+    padding-left: 40px;
+  }
+
+  .approach__item:nth-child(even) {
+    .approach__item-text {
+      padding-right: 40px;
+    }
   }
 }
 
 @media screen and (max-width: 600px) {
   .approach__descr {
     margin-bottom: 45px;
+  }
+
+  .approach__item,
+  .approach__item:nth-child(even) {
+    flex-direction: column;
+  }
+
+  .approach__item-image {
+    @include col(4, $useMargin: false);
+    padding-top: 20px;
+  }
+
+  .approach__item-text {
+    @include col(6, $useMargin: false);
+    text-align: center;
+  }
+}
+
+@media screen and (max-width: 400px) {
+  .approach__item-text {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+
+  .approach__item:nth-child(even) {
+    .approach__item-text {
+      padding-left: 20px;
+      padding-right: 20px;
+    }
+  }
+
+  .approach__item-image {
+    @include col(6, $useMargin: false);
+    padding-left: 20px;
+    padding-right: 20px;
   }
 }
