@@ -16,6 +16,21 @@
 .page-header__bottom {
   padding-top: 40px;
   padding-bottom: 40px;
+  background: #fff;
+  transition: padding $duration;
+
+  &--fixed {
+    padding-top: 15px;
+    padding-bottom: 15px;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    z-index: 9999;
+    box-shadow: 0 0 1px 0 rgba(0, 0, 0, 0.3);
+    animation-name: fixHeader;
+    animation-duration: 0.6s;
+  }
 }
 
 .page-header-nav {
@@ -52,8 +67,8 @@
 
 @media screen and (max-width: 860px) {
   .page-header__bottom {
-    padding-top: 25px;
-    padding-bottom: 25px;
+    padding-top: 15px;
+    padding-bottom: 15px;
   }
 
   .page-header-nav {

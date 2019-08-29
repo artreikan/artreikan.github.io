@@ -16,6 +16,10 @@ body {
   text-rendering: optimizeLegibility;
   line-height: 1.2;
 
+  &.overlay {
+    overflow: hidden;
+  }
+
   &::after {
     content: '';
     position: fixed;

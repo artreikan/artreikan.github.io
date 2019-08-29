@@ -26,8 +26,7 @@
   transition: color $duration;
   text-transform: capitalize;
 
-  &--active,
-  &:hover {
+  &--active {
     color: $bgColor3;
   }
 }
