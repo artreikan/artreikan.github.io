@@ -28,8 +28,6 @@ document.addEventListener('DOMContentLoaded', () => {
 
     e.preventDefault();
 
-    // highlightActiveElement(e.target, 'nav__link--active');
-
     const sectionId = e.target.getAttribute('href');
 
     document.querySelector(sectionId).scrollIntoView({
@@ -54,22 +52,16 @@ document.addEventListener('DOMContentLoaded', () => {
 
   const sectionsOffset = Object.create(null);
 
-  sections.forEach(section => sectionsOffset[section.id] = section.offsetTop);
-  console.log(sectionsOffset);
+  sections.forEach(section => sectionsOffset[section.id] = section.offsetTop - 120);
 
   window.addEventListener('scroll', () => {
     const scrollPosition = document.documentElement.scrollTop || document.body.scrollTop;
 
     for (let sectionId in sectionsOffset) {
-      if (sectionsOffset[sectionId] <= (scrollPosition + 500)) {
+      if (sectionsOffset[sectionId] <= scrollPosition) {
         document.querySelector('.nav__link--active').classList.remove('nav__link--active');
         document.querySelector(`a[href*=${sectionId}]`).classList.add('nav__link--active');
       }
     }
   });
 });
-
-function highlightActiveElement(el, activeClassName) {
-  document.querySelector(`.${activeClassName}`).classList.remove(activeClassName);
-  el.classList.add(activeClassName);
-}
