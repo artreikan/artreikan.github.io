@@ -1,0 +1,28 @@
+.optimization {
+  padding-bottom: 0;
+}
+
+.optimization-container {
+  display: flex;
+  flex-wrap: wrap;
+  position: relative;
+}
+
+.optimization__image {
+  position: absolute;
+  z-index: -1;
+  margin-left: -200px;
+  @include fluidImage;
+}
+
+.optimization-content {
+  @include col(8, false);
+  margin-left: auto;
+}
+
+.optimization__title {
+  font-size: 30px;
+  font-weight: 900;
+  text-transform: uppercase;
+  color: $accentColor2;
+}
