@@ -1,0 +1,29 @@
+.section {
+  padding: 60px 0;
+}
+
+.section__title,
+.section__descr {
+  text-align: center;
+}
+
+.section__title {
+  font-size: 30px;
+  font-weight: 400;
+  text-transform: uppercase;
+  position: relative;
+
+  &--with-line::after {
+    content: '';
+    top: 100%;
+    width: 215px;
+    height: 3px;
+    margin-top: 7px;
+    background: $accentColor;
+    @include centerX;
+  }
+}
+
+.section__descr {
+  font-size: 23px;
+}

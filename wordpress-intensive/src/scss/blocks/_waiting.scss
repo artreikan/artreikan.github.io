@@ -1,0 +1,33 @@
+.waiting {
+  background: #efefef;
+}
+
+.waiting__title {
+  margin-bottom: 15px;
+}
+
+.waiting__descr {
+  margin-bottom: 40px;
+}
+
+.waiting__list {
+  @include row;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.waiting__item {
+  @include col(4);
+}
+
+.waiting__item-image {
+  display: block;
+  width: 100%;
+  margin: 0 auto 20px;
+}
+
+.waiting__item-text {
+  font-weight: 300;
+  text-align: center;
+}
