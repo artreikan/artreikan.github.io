@@ -1,6 +1,3 @@
-.optimization {
-  padding-bottom: 0;
-}
 
 .optimization-container {
   display: flex;
@@ -10,9 +7,9 @@
 
 .optimization__image {
   position: absolute;
+  top: 40px;
   z-index: -1;
   margin-left: -200px;
-  @include fluidImage;
 }
 
 .optimization-content {

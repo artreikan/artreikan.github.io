@@ -1,0 +1,35 @@
+.graduation {
+  background: #000 url("../img/graduation-bg.jpg") no-repeat center;
+  background-size: cover;
+  color: #fff;
+}
+
+.graduation__title {
+  margin-bottom: 40px;
+}
+
+.graduation__list {
+  @include row;
+  list-style: none;
+  padding: 0;
+  margin-bottom: 0;
+}
+
+.graduation__item {
+  @include autoCol;
+  padding: 15px;
+  text-align: center;
+}
+
+.graduation__item-ic {
+  display: block;
+  margin: 0 auto 15px;
+  width: 115px;
+  height: 115px;
+}
+
+.graduation__item-descr {
+  margin-bottom: 0;
+  font-weight: 300;
+}
+

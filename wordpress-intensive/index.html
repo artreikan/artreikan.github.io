@@ -78,7 +78,10 @@
 
 		<section class="section optimization">
 			<div class="container optimization-container">
-				<img src="dist/img/girl.jpg" alt="Что такое оптимизация?" class="optimization__image">
+				<picture class="optimization__picture">
+					<source media="(max-width: 800px)" srcset="#">
+					<img src="dist/img/girl.jpg" alt="" class="optimization__image">
+				</picture>
 				<div class="optimization-content">
 					<h2 class="optimization__title">
 						Что такое оптимизация и зачем она нужна?
@@ -106,6 +109,56 @@
 				</div>
 			</div>
 		</section>
+		<!-- /.optimization -->
+
+		<section class="section graduation">
+			<div class="container">
+				<h2 class="section__title section__title--with-line graduation__title">По окончании обучения Вы сможете!</h2>
+				<ul class="graduation__list">
+					<li class="graduation__item">
+						<svg class="graduation__item-ic">
+							<use xlink:href="dist/img/symbol/sprite.svg#step1"></use>
+						</svg>
+						<p class="graduation__item-descr">
+							Создать свой сайт или блог
+						</p>
+					</li>
+					<li class="graduation__item">
+						<svg class="graduation__item-ic">
+							<use xlink:href="dist/img/symbol/sprite.svg#step2"></use>
+						</svg>
+						<p class="graduation__item-descr">
+							Правильно его оптимизировать
+						</p>
+					</li>
+					<li class="graduation__item">
+						<svg class="graduation__item-ic">
+							<use xlink:href="dist/img/symbol/sprite.svg#step3"></use>
+						</svg>
+						<p class="graduation__item-descr">
+							Обеспечить ему медленный, но верный рост в ТОП
+						</p>
+					</li>
+					<li class="graduation__item">
+						<svg class="graduation__item-ic">
+							<use xlink:href="dist/img/symbol/sprite.svg#step4"></use>
+						</svg>
+						<p class="graduation__item-descr">
+							Достигнуть стабильного прироста посетителей
+						</p>
+					</li>
+					<li class="graduation__item">
+						<svg class="graduation__item-ic">
+							<use xlink:href="dist/img/symbol/sprite.svg#step5"></use>
+						</svg>
+						<p class="graduation__item-descr">
+							Получать ощутимую прибыль
+						</p>
+					</li>
+				</ul>
+			</div>
+		</section>
+		<!-- /.graduation -->
 		<script src="dist/js/main.js"></script>
 	</body>
 </html>
