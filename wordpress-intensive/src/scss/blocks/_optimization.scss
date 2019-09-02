@@ -20,12 +20,29 @@
 .optimization__title {
   font-size: 30px;
   font-weight: 900;
+  line-height: 1.2;
+  margin-bottom: 20px;
   text-transform: uppercase;
   color: $accentColor2;
+}
+
+.optimization__text:last-child {
+  margin-bottom: 0;
 }
 
 @media screen and (max-width: 800px) {
   .optimization__picture {
     display: none;
+  }
+
+  .optimization-content {
+    @include col(12, false);
+    margin-left: 0;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .optimization__title {
+    font-size: 24px;
   }
 }
