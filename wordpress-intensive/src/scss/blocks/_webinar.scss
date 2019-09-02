@@ -22,4 +22,26 @@
 .webinar__signup {
   font-size: 23px;
   margin-bottom: 0;
+  line-height: 1.2;
+}
+
+@media screen and (max-width: 600px) {
+  .webinar__ic,
+  .webinar__title {
+    margin-bottom: 15px;
+  }
+
+  .webinar__date {
+    font-size: 26px;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .webinar__date {
+    font-size: 24px;
+  }
+
+  .webinar__signup {
+    font-size: 18px;
+  }
 }
