@@ -1,0 +1,32 @@
+$footerTextColor: #888;
+
+.page-footer {
+  background: $darkBg;
+  color: $footerTextColor;
+  text-align: center;
+}
+
+.page-footer__links {
+  list-style: none;
+  padding: 0;
+  margin: 0 0 5px;
+}
+
+.page-footer__item {
+  display: inline-block;
+  vertical-align: middle;
+}
+
+.page-footer__link {
+  color: $footerTextColor;
+  text-decoration: underline;
+
+  &:hover {
+    color: $footerTextColor;
+  }
+}
+
+.page-footer__call-link,
+.page-footer__call-link:hover {
+  color: $footerTextColor;
+}

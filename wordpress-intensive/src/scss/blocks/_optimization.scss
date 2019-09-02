@@ -23,3 +23,9 @@
   text-transform: uppercase;
   color: $accentColor2;
 }
+
+@media screen and (max-width: 800px) {
+  .optimization__picture {
+    display: none;
+  }
+}
