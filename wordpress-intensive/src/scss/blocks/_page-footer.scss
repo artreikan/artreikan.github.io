@@ -26,6 +26,10 @@ $footerTextColor: #888;
   }
 }
 
+.page-footer__call {
+  margin-bottom: 0;
+}
+
 .page-footer__call-link,
 .page-footer__call-link:hover {
   color: $footerTextColor;
