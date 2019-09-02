@@ -19,3 +19,21 @@
   line-height: 1.433;
   margin-bottom: 25px;
 }
+
+@media screen and (max-width: 600px) {
+  .gift__ic {
+    margin-bottom: 15px;
+  }
+
+  .gift__descr {
+    font-size: 24px;
+    margin-bottom: 15px;
+    line-height: 1.2;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .gift__descr {
+    font-size: 18px;
+  }
+}
