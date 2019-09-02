@@ -9,7 +9,7 @@ const path = {
     html: "./index.html",
     scss: "./src/scss/**/*.scss",
     images: "./src/img/*",
-    js: ["./src/js/jquery.min.js", "./src/js/script.js"]
+    js: ["./src/js/script.js"]
   },
   build: {
     root: "./dist",
