@@ -80,3 +80,22 @@
   display: block;
   margin: 0 auto;
 }
+
+@media screen and (max-width: 600px) {
+  .modal {
+    width: 96%;
+    max-width: 500px;
+  }
+
+  .modal__close {
+    top: 0;
+    right: 0;
+  }
+}
+
+@media screen and (max-width: 480px){
+  .modal__text {
+    font-size: 20px;
+    margin-bottom: 20px;
+  }
+}
