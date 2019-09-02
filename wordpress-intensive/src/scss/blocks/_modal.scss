@@ -9,9 +9,12 @@
   z-index: 10;
   transition: opacity $duration;
 
+  &.show {
+    left: 0;
+  }
+
   &.active {
     opacity: 1;
-    left: 0;
   }
 }
 
@@ -37,6 +40,10 @@
   line-height: 0;
   cursor: pointer;
   color: $accentColor;
+
+  &:focus {
+    outline: 1px dashed $accentColor;
+  }
 }
 
 .modal__text {
