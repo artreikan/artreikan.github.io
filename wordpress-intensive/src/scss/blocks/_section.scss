@@ -27,3 +27,17 @@
 .section__descr {
   font-size: 23px;
 }
+
+@media screen and (max-width: 600px) {
+  .section {
+    padding: 35px 0;
+  }
+
+  .section__title {
+    font-size: 24px;
+  }
+
+  .section__descr {
+    font-size: 18px;
+  }
+}

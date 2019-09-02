@@ -32,3 +32,31 @@
   font-size: 15px;
   text-align: center;
 }
+
+@media screen and (max-width: 700px) {
+  .waiting__descr {
+    margin-bottom: 25px;
+  }
+
+  .waiting__list {
+    justify-content: center;
+  }
+
+  .waiting__item {
+    @include col(6);
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .waiting__item {
+    @include col(12);
+
+    &:not(:last-child) {
+      margin-bottom: 20px;
+    }
+  }
+
+  .waiting__item-image {
+    margin-bottom: 15px;
+  }
+}
