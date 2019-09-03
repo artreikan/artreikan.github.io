@@ -28,5 +28,8 @@
   },
   "browserslist": [
     "last 3 versions"
-  ]
+  ],
+  "dependencies": {
+    "svgxuse": "^1.2.6"
+  }
 }
