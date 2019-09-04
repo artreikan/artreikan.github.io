@@ -6,9 +6,10 @@
 
 .page-header__top {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   align-items: center;
-  padding: 20px 0;
+  padding-top: 20px;
 }
 
 .page-header__agents {
@@ -44,4 +45,81 @@
 .page-header__phone-btn {
   padding: 10px 20px;
   font-size: 14px;
+}
+
+.page-header__info {
+  @include col(7, false);
+  margin-left: auto;
+  padding: 40px 0;
+  text-align: right;
+}
+
+.page-header__title {
+  font-weight: normal;
+  text-transform: uppercase;
+  font-size: 42px;
+  margin-bottom: 40px;
+}
+
+.page-header__subtitle {
+  display: block;
+  font-size: 24px;
+}
+
+.page-header__advantages {
+  list-style: none;
+  margin: 0 0 40px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-end;
+}
+
+.page-header__advantages-item {
+  width: 140px;
+  text-align: center;
+}
+
+.page-header__advantages-ic {
+  display: inline-block;
+  margin-bottom: 10px;
+
+  &_stopwatch {
+    width: 42px;
+    height: 46px;
+  }
+
+  &_handcart {
+    width: 44px;
+    height: 45px;
+  }
+
+  &_messages {
+    width: 45px;
+    height: 42px;
+  }
+}
+
+.page-header__advantages-descr {
+  margin-bottom: 0;
+}
+
+.page-header__info-btn {
+  padding: 10px 30px;
+  margin-bottom: 10px;
+}
+
+.page-header__info-alternative {
+  display: block;
+}
+
+.page-header__info-link {
+  text-transform: uppercase;
+  text-decoration: underline;
+  color: #fff;
+
+  &:hover {
+    text-decoration: none;
+    color: #fff;
+  }
 }
