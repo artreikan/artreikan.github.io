@@ -2,6 +2,11 @@
  * Основные стили
  **/
 
+::selection {
+  background: $accentColor;
+  color: #fff;
+}
+
 html {
   font-size: 16px;
 }

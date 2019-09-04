@@ -1,0 +1,64 @@
+.consultation {
+  background: #333 url("../img/bg2.jpg") no-repeat center;
+  background-size: cover;
+}
+
+.consultation__title {
+  @include col(10, false);
+  color: #fff;
+  text-align: left;
+  margin-bottom: 30px;
+}
+
+.consultation__descr {
+  color: #fff;
+  margin-bottom: 20px;
+}
+
+.consultation-form {
+  @include col(4, false);
+}
+
+.consultation-form__label {
+  @include visuallyHidden;
+}
+
+.consultation-form__input {
+  display: block;
+  margin-bottom: 10px;
+  padding: 15px;
+  width: 100%;
+  border: none;
+  border-radius: 3px;
+
+  &::placeholder {
+    font-size: 15px;
+  }
+}
+
+.consultation-form__btn {
+  width: 100%;
+  padding: 15px;
+}
+
+@media screen and (max-width: 860px) {
+  .consultation__title {
+    @include col(12, false);
+    text-align: center;
+  }
+
+  .consultation__descr {
+    text-align: center;
+  }
+
+  .consultation-form {
+    @include col(8, false);
+    margin: 0 auto;
+  }
+}
+
+@media screen and (max-width: 500px) {
+  .consultation-form {
+    @include col(12, false);
+  }
+}
