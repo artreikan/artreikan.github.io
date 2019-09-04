@@ -1,0 +1,14 @@
+.g-btn {
+  background-color: $accentColor;
+  border: none;
+  border-radius: 3px;
+  display: inline-block;
+  color: #fff;
+  text-transform: uppercase;
+  line-height: 1;
+  transition: background-color $duration;
+
+  &:hover {
+    background-color: lighten($accentColor, 5%);
+  }
+}
