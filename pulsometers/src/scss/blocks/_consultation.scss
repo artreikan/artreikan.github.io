@@ -42,6 +42,10 @@
 }
 
 @media screen and (max-width: 860px) {
+  .consultation {
+    background: #333 url("../img/bg2-mobile.jpg") no-repeat center;
+    background-size: cover;
+  }
   .consultation__title {
     @include col(12, false);
     text-align: center;
