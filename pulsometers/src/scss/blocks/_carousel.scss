@@ -1,0 +1,41 @@
+.carousel {
+  h2 {
+    @include visuallyHidden;
+  }
+}
+
+.carousel-container {
+  @include row(false);
+}
+
+.carousel-items {
+  @include col(10, false);
+  margin: 0 auto;
+  padding: 0 15px;
+}
+
+.carousel-item__img {
+  @include fluidImage;
+}
+
+.carousel__btn {
+  align-self: center;
+  border: none;
+  background: none;
+}
+
+.carousel__btn-ic {
+  width: 31px;
+  height: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .carousel__btn {
+    display: none;
+  }
+
+  .carousel-items {
+    @include col(12, false);
+    padding: 0;
+  }
+}

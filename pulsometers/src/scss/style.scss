@@ -5,6 +5,9 @@
 @import "mixins";
 @import "core";
 
+// libs
+@import "libs/slick";
+
 // blocks
 @import "blocks/section";
 @import "blocks/buttons";
@@ -12,3 +15,4 @@
 @import "blocks/page-header";
 @import "blocks/advantages";
 @import "blocks/consultation";
+@import "blocks/carousel";
