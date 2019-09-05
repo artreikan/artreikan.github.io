@@ -26,7 +26,7 @@
 						<a href="tel:+74999228974" class="page-header__phone-link">
 							+7 (499) 922-89-74
 						</a>
-						<button class="g-btn page-header__phone-btn">
+						<button class="g-btn page-header__phone-btn open-modal" data-modal="modal-call">
 							Заказать звонок
 						</button>
 					</div>
@@ -65,7 +65,7 @@
 							</p>
 						</li>
 					</ul>
-					<button class="g-btn page-header__info-btn">Заказать консультацию</button>
+					<button class="g-btn page-header__info-btn open-modal" data-modal="modal-call">Заказать консультацию</button>
 					<span class="page-header__info-alternative">
 						или
 						<a href="#!" class="page-header__info-link">Перейти в каталог</a>
@@ -126,17 +126,17 @@
 					Просто заполните форму заявки<br>
 					и мы перезвоним вам в течении 10 минут
 				</p>
-				<form action="/" method="post" class="consultation-form">
-					<label for="user-name" class="consultation-form__label">Ваше имя</label>
-					<input type="text" id="user-name" class="consultation-form__input" placeholder="Ваше имя" required>
+				<form action="/" method="post" class="form consultation-form">
+					<label for="user-name" class="form__label">Ваше имя</label>
+					<input type="text" id="user-name" class="form__input" placeholder="Ваше имя" required>
 
-					<label for="user-tel" class="consultation-form__label">Ваш телефон</label>
-					<input type="tel" id="user-tel" class="consultation-form__input" placeholder="Ваш телефон" required>
+					<label for="user-tel" class="form__label">Ваш телефон</label>
+					<input type="tel" id="user-tel" class="form__input" placeholder="Ваш телефон" required>
 
-					<label for="user-email" class="consultation-form__label">Ваш E-mail</label>
-					<input type="email" id="user-email" class="consultation-form__input" placeholder="Ваш E-mail" required>
+					<label for="user-email" class="form__label consultation-form__label">Ваш E-mail</label>
+					<input type="email" id="user-email" class="form__input" placeholder="Ваш E-mail" required>
 
-					<button class="g-btn consultation-form__btn">Заказать консультацию</button>
+					<button class="g-btn form__btn">Заказать консультацию</button>
 				</form>
 			</div>
 		</section>
@@ -198,7 +198,7 @@
 								<span class="catalog__item-old-price">4 750 руб.</span>
 								<span class="catalog__item-new-price">4 500 руб.</span>
 							</div>
-							<button class="g-btn catalog__item-btn">Купить</button>
+							<button class="g-btn catalog__item-btn open-modal" data-modal="modal-buy">Купить</button>
 						</footer>
 					</div>
 					<div class="catalog__item">
@@ -213,7 +213,7 @@
 								<span class="catalog__item-old-price">6 990 руб.</span>
 								<span class="catalog__item-new-price">6 641 руб.</span>
 							</div>
-							<button class="g-btn catalog__item-btn">Купить</button>
+							<button class="g-btn catalog__item-btn open-modal" data-modal="modal-buy">Купить</button>
 						</footer>
 					</div>
 					<div class="catalog__item">
@@ -228,7 +228,7 @@
 								<span class="catalog__item-old-price">7 390 руб.</span>
 								<span class="catalog__item-new-price">7 021 руб.</span>
 							</div>
-							<button class="g-btn catalog__item-btn">Купить</button>
+							<button class="g-btn catalog__item-btn open-modal" data-modal="modal-buy">Купить</button>
 						</footer>
 					</div>
 
@@ -244,7 +244,7 @@
 								<span class="catalog__item-old-price">4 750 руб.</span>
 								<span class="catalog__item-new-price">4 500 руб.</span>
 							</div>
-							<button class="g-btn catalog__item-btn">Купить</button>
+							<button class="g-btn catalog__item-btn open-modal" data-modal="modal-buy">Купить</button>
 						</footer>
 					</div>
 					<div class="catalog__item">
@@ -259,7 +259,7 @@
 								<span class="catalog__item-old-price">6 990 руб.</span>
 								<span class="catalog__item-new-price">6 641 руб.</span>
 							</div>
-							<button class="g-btn catalog__item-btn">Купить</button>
+							<button class="g-btn catalog__item-btn open-modal" data-modal="modal-buy">Купить</button>
 						</footer>
 					</div>
 					<div class="catalog__item">
@@ -274,7 +274,7 @@
 								<span class="catalog__item-old-price">7 390 руб.</span>
 								<span class="catalog__item-new-price">7 021 руб.</span>
 							</div>
-							<button class="g-btn catalog__item-btn">Купить</button>
+							<button class="g-btn catalog__item-btn open-modal" data-modal="modal-buy">Купить</button>
 						</footer>
 					</div>
 				</div>
@@ -291,7 +291,7 @@
 								<span class="catalog__item-old-price">4 750 руб.</span>
 								<span class="catalog__item-new-price">4 500 руб.</span>
 							</div>
-							<button class="g-btn catalog__item-btn">Купить</button>
+							<button class="g-btn catalog__item-btn open-modal" data-modal="modal-buy">Купить</button>
 						</footer>
 					</div>
 					<div class="catalog__item">
@@ -306,7 +306,7 @@
 								<span class="catalog__item-old-price">6 990 руб.</span>
 								<span class="catalog__item-new-price">6 641 руб.</span>
 							</div>
-							<button class="g-btn catalog__item-btn">Купить</button>
+							<button class="g-btn catalog__item-btn open-modal" data-modal="modal-buy">Купить</button>
 						</footer>
 					</div>
 					<div class="catalog__item">
@@ -321,7 +321,7 @@
 								<span class="catalog__item-old-price">7 390 руб.</span>
 								<span class="catalog__item-new-price">7 021 руб.</span>
 							</div>
-							<button class="g-btn catalog__item-btn">Купить</button>
+							<button class="g-btn catalog__item-btn open-modal" data-modal="modal-buy">Купить</button>
 						</footer>
 					</div>
 				</div>
@@ -338,7 +338,7 @@
 								<span class="catalog__item-old-price">4 750 руб.</span>
 								<span class="catalog__item-new-price">4 500 руб.</span>
 							</div>
-							<button class="g-btn catalog__item-btn">Купить</button>
+							<button class="g-btn catalog__item-btn open-modal" data-modal="modal-buy">Купить</button>
 						</footer>
 					</div>
 					<div class="catalog__item">
@@ -353,13 +353,49 @@
 								<span class="catalog__item-old-price">6 990 руб.</span>
 								<span class="catalog__item-new-price">6 641 руб.</span>
 							</div>
-							<button class="g-btn catalog__item-btn">Купить</button>
+							<button class="g-btn catalog__item-btn open-modal" data-modal="modal-buy">Купить</button>
 						</footer>
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- /.catalog -->
+
+		<div class="modal-overlay modal-call">
+			<div class="modal">
+				<button type="button" class="modal__close" aria-label="Закрыть модальное окно">&times;</button>
+				<h3 class="modal__title">Просто заполните форму заявки</h3>
+				<p class="modal__text">и мы перезвоним вам в течении 10 минут</p>
+				<form action="/" method="post" class="form modal-form">
+					<input type="text" class="form__input" placeholder="Ваше имя" required>
+
+					<input type="tel" class="form__input" placeholder="Ваш телефон" required>
+
+					<input type="email" class="form__input" placeholder="Ваш E-mail" required>
+
+					<button class="g-btn form__btn">Заказать консультацию</button>
+				</form>
+			</div>
+		</div>
+		<!-- /.modal-call -->
+
+		<div class="modal-overlay modal-buy">
+			<div class="modal">
+				<button type="button" class="modal__close" aria-label="Закрыть модальное окно">&times;</button>
+				<h3 class="modal__title">Ваш заказ:</h3>
+				<p class="modal__text"></p>
+				<form action="/" method="post" class="form modal-form">
+					<input type="text" class="form__input" placeholder="Ваше имя" required>
+
+					<input type="tel" class="form__input" placeholder="Ваш телефон" required>
+
+					<input type="email" class="form__input" placeholder="Ваш E-mail" required>
+
+					<button class="g-btn form__btn">Заказать консультацию</button>
+				</form>
+			</div>
+		</div>
+		<!-- /.modal-buy -->
 		<script src="dist/js/main.js"></script>
 	</body>
 </html>

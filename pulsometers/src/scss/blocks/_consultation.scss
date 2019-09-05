@@ -19,28 +19,6 @@
   @include col(4, false);
 }
 
-.consultation-form__label {
-  @include visuallyHidden;
-}
-
-.consultation-form__input {
-  display: block;
-  margin-bottom: 10px;
-  padding: 15px;
-  width: 100%;
-  border: none;
-  border-radius: 3px;
-
-  &::placeholder {
-    font-size: 15px;
-  }
-}
-
-.consultation-form__btn {
-  width: 100%;
-  padding: 15px;
-}
-
 @media screen and (max-width: 860px) {
   .consultation {
     background: #333 url("../img/bg2-mobile.jpg") no-repeat center;
