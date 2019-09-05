@@ -1,4 +1,22 @@
 document.addEventListener('DOMContentLoaded', () => {
+
+  // closest polyfill
+  (function (ELEMENT) {
+    ELEMENT.matches = ELEMENT.matches ||
+        ELEMENT.mozMatchesSelector ||
+        ELEMENT.msMatchesSelector ||
+        ELEMENT.oMatchesSelector ||
+        ELEMENT.webkitMatchesSelector;
+
+    ELEMENT.closest = ELEMENT.closest || function closest(selector) {
+      if (!this) return null;
+      if (this.matches(selector)) return this;
+      if (!this.parentElement) {
+        return null;
+      } else return this.parentElement.closest(selector);
+    };
+  }(Element.prototype));
+
   const openModalBtns = document.querySelectorAll('.open-modal');
   const openModalBtnsCount = openModalBtns.length;
   let modal = null;
@@ -12,8 +30,8 @@ document.addEventListener('DOMContentLoaded', () => {
   function openModal() {
     modal = document.querySelector(`.${this.dataset.modal}`);
     if (this.dataset.modal === 'modal-buy') {
-      const yourOrder = this.closest('.catalog__item').querySelector('.catalog__item-title').textContent;
-      modal.querySelector('.modal__text').innerText = yourOrder;
+      const orderText = this.closest('.catalog__item').querySelector('.catalog__item-title').textContent;
+      modal.querySelector('.modal__text').innerText = orderText;
     }
     modal.classList.add('active');
     modal.classList.add('show');

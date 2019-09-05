@@ -12,6 +12,7 @@ const path = {
     js: ['./src/js/jquery.min.js',
       './src/js/slick.min.js',
       './src/js/maskedinput.js',
+      './src/js/svgxuse.min.js',
       './src/js/script.js',
       './src/js/modal.js'
     ]
