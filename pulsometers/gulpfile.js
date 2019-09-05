@@ -9,7 +9,12 @@ const path = {
     html: './index.html',
     scss: './src/scss/**/*.scss',
     images: './src/img/*',
-    js: ['./src/js/jquery.min.js', './src/js/slick.min.js', './src/js/script.js', './src/js/modal.js']
+    js: ['./src/js/jquery.min.js',
+      './src/js/slick.min.js',
+      './src/js/maskedinput.js',
+      './src/js/script.js',
+      './src/js/modal.js'
+    ]
   },
   build: {
     root: './dist',

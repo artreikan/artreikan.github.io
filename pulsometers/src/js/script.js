@@ -26,4 +26,7 @@ $(document).ready(function () {
     .eq($(this).index())
     .addClass('catalog__tabs-content_active');
   });
+
+  // masked input
+  $('input[type=tel]').mask('+7 (999) 999-99-99');
 });
