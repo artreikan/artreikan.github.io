@@ -1,0 +1,35 @@
+.reviews__item {
+  @include row;
+  align-items: center;
+  padding: 40px 40px 40px 0;
+  border-bottom: 1px solid #f6f6f6;
+}
+
+.reviews__item-image-wrap {
+  @include col(3);
+}
+
+.reviews__item-image {
+  width: 175px;
+  height: 175px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+
+.review__item-content {
+  @include col(9);
+}
+
+.review__item-descr {
+  display: block;
+  margin-bottom: 15px;
+  font-size: 14px;
+}
+
+.review__item-paragraph {
+  line-height: 1.4;
+}
+
+.review__item-paragraph:last-child {
+  margin-bottom: 0;
+}
