@@ -1,0 +1,132 @@
+$borderColor: #d0d0d0;
+
+.catalog__title {
+  margin-bottom: 20px;
+}
+
+.catalog__tabs-caption {
+  list-style: none;
+  margin: 0 -5px 30px;
+  padding: 0;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.catalog__tab {
+  border: 1px solid $borderColor;
+  margin: 5px;
+  padding: 15px;
+  width: 200px;
+  text-align: center;
+  cursor: pointer;
+  line-height: 1;
+  transform: skew(-20deg);
+
+  &:focus,
+  &:hover {
+    box-shadow: 0 0 10px 0 rgba($accentColor, .5);
+    outline: none;
+    border-color: transparent;
+  }
+
+  &_active {
+    background: $accentColor;
+    color: #fff;
+    border-color: $accentColor;
+  }
+}
+
+.catalog__tab-text {
+  display: inline-block;
+  transform: skew(20deg);
+  text-transform: uppercase;
+  user-select: none;
+}
+
+.catalog__tabs-content {
+  display: none;
+
+  &_active {
+    @include row;
+  }
+}
+
+.catalog__item {
+  @include col(4);
+  margin-bottom: 30px;
+  border: 1px solid $borderColor;
+  padding: 20px 15px;
+  text-align: center;
+}
+
+.catalog__item-img {
+  display: block;
+  width: 140px;
+  height: 200px;
+  object-fit: cover;
+  margin: 0 auto 15px;
+}
+
+.catalog__item-title {
+  font-size: 16px;
+}
+
+.catalog__item-descr {
+  margin-bottom: 10px;
+  font-size: 14px;
+}
+
+.catalog__item-link {
+  display: inline-block;
+  margin-bottom: 20px;
+  color: $accentColor;
+  font-size: 14px;
+  text-decoration: underline;
+  text-transform: uppercase;
+  
+  &:hover {
+    color: $accentColor;
+    text-decoration: none;
+  }
+}
+
+.catalog__item-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: center;
+  padding-top: 20px;
+  border-top: 1px solid $borderColor;
+}
+
+.catalog__item-price {
+  text-align: left;
+}
+
+.catalog__item-old-price {
+  display: block;
+  font-size: 14px;
+  text-decoration: line-through;
+}
+
+.catalog__item-new-price {
+  font-weight: bold;
+}
+
+.catalog__item-btn {
+  padding: 10px 25px;
+}
+
+@media screen and (max-width: 860px) {
+  .catalog__item {
+    @include col(6);
+  }
+}
+
+@media screen and (max-width: 540px) {
+  .catalog__item {
+    @include col(12);
+  }
+}
