@@ -1,0 +1,49 @@
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro/GothamPro-Medium.woff');
+  src: local('Gotham Pro Medium'), local('GothamPro-Medium'),
+  url('../fonts/GothamPro/GothamPro-Medium.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro/GothamPro-Bold.woff');
+  src: local('Gotham Pro Bold'), local('GothamPro-Bold'),
+  url('../fonts/GothamPro/GothamPro-Bold.woff') format('woff');
+  font-weight: bold;
+  font-style: normal;
+  font-display: swap;
+}
+
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro/GothamPro-Black.woff');
+  src: local('Gotham Pro Black'), local('GothamPro-Black'),
+  url('../fonts/GothamPro/GothamPro-Black.woff') format('woff');
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Gotham Pro';
+  src: url('../fonts/GothamPro/GothamPro.woff');
+  src: local('Gotham Pro'), local('GothamPro'),
+  url('../fonts/GothamPro/GothamPro.woff') format('woff');
+  font-weight: normal;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: 'Akrobat';
+  src: url('../fonts/Akrobat/Akrobat-Regular.woff');
+  src: local('Akrobat Regular'), local('Akrobat-Regular'),
+  url('../fonts/Akrobat/Akrobat-Regular.woff') format('woff');
+  font-weight: 500;
+  font-style: normal;
+}

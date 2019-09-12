@@ -1,0 +1,61 @@
+$errorTextColor: #cb2c38;
+
+.form {
+  padding-bottom: 30px;
+}
+
+.form-switcher {
+  display: flex;
+  flex-wrap: wrap;
+  margin-bottom: 30px;
+}
+
+.form-switcher__btn {
+  border: none;
+  width: 50%;
+  padding: 15px;
+  background-color: $secondBgColor;
+  text-decoration: underline;
+  transition: background-color $duration, color $duration;
+  font-weight: 700;
+  font-family: 'Gotham Pro', sans-serif;
+
+  &--active,
+  &:hover {
+    background-color: $primaryColor;
+    color: #fff;
+    text-decoration: none;
+  }
+}
+
+.form__group {
+  padding-left: 30px;
+  padding-right: 30px;
+
+  &:not(:last-child) {
+    margin-bottom: 8px;
+  }
+}
+
+.form__input,
+.form__btn {
+  width: 100%;
+  padding: 15px;
+}
+
+.form__input {
+  border-radius: 4px;
+  border: none;
+  
+  &--textarea {
+    resize: none;
+  }
+}
+
+.form__error {
+  color: $errorTextColor;
+  font-weight: 500;
+  line-height: 1;
+  margin-bottom: 8px;
+  display: none;
+}

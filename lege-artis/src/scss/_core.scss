@@ -1,0 +1,44 @@
+/**
+ * Основные стили
+ **/
+
+html {
+  font-size: 16px;
+}
+
+body {
+  background: $mainBgColor;
+  overflow-wrap: break-word;
+  word-wrap: break-word;
+  min-width: 320px;
+  font-family: 'Open Sans', sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+  line-height: 1.2;
+  display: flex;
+  min-height: 100vh;
+  flex-direction: column;
+}
+
+a {
+  font-family: 'Gotham Pro', sans-serif;
+  color: $primaryColor;
+  text-decoration: underline;
+
+  &:hover {
+    text-decoration: none;
+  }
+}
+
+.container {
+  @include container;
+}
+
+.row {
+  @include row;
+}
+
+.visually-hidden {
+  @include visuallyHidden;
+}

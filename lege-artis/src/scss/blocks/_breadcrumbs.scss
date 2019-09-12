@@ -1,0 +1,33 @@
+.breadcrumbs {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  font-size: 13px;
+}
+
+.breadcrumbs__item {
+  position: relative;
+
+  &:not(:last-child) {
+    margin-right: 26px;
+
+    &::after {
+      content: '';
+      @include centerY;
+      right: -18px;
+      width: 8px;
+      height: 6px;
+      background: url("../img/breadcrumb-separator.png") no-repeat center;
+    }
+  }
+}
+
+.breadcrumbs__link {
+  color: $textColor;
+  text-decoration: none;
+
+  &:hover {
+    text-decoration: underline;
+  }
+}

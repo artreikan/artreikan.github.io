@@ -1,0 +1,53 @@
+.table-title {
+  margin-left: 15px;
+  margin-bottom: 20px;
+}
+
+.table-wrapper {
+  overflow: auto;
+}
+
+.table {
+  width: 100%;
+}
+
+.table__head {
+  background: $secondBgColor;
+}
+
+.table__row {
+  &--bordered {
+    border-bottom: 1px solid $secondBgColor;
+  }
+}
+
+.table__cell {
+  padding: 15px;
+
+  &--head {
+    font-weight: 400;
+  }
+
+  &--subcell {
+    padding-left: 30px;
+
+    &,
+    & ~ .table__cell {
+      padding-top: 0;
+    }
+  }
+}
+
+.table-comment {
+  font-size: 12px;
+  font-family: 'Gotham Pro', sans-serif;
+  letter-spacing: 0.12px;
+}
+
+
+// media
+@media screen and (max-width: 720px) {
+  .table {
+    min-width: 720px;
+  }
+}

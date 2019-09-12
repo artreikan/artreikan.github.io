@@ -1,0 +1,36 @@
+.pagination {
+  list-style: none;
+  padding-left: 0;
+  margin-left: auto;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.pagination__item {
+  margin: 0 5px;
+}
+
+.pagination__link {
+  font-family: 'Gotham Pro', sans-serif;
+  font-size: 18px;
+  display: block;
+  width: 40px;
+  height: 40px;
+  text-decoration: none;
+  border: 1px solid $primaryColor;
+  border-radius: 4px;
+  text-align: center;
+  line-height: 40px;
+  transition: color $duration, background-color $duration;
+
+  &--skip {
+    border: none;
+    font-size: 24px;
+  }
+
+  &:hover,
+  &--active {
+    color: #fff;
+    background-color: $primaryColor;
+  }
+}

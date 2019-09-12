@@ -1,0 +1,149 @@
+$sidebarTextBorderColor: #d1d1d1;
+$sidebarDocsSizeColor: #666;
+
+.sidebar {
+  @include col(3);
+  margin-left: auto;
+  padding: 140px 0;
+}
+
+.sidebar__text {
+  border: 2px solid $sidebarTextBorderColor;
+  padding: 30px;
+  margin-bottom: 45px;
+}
+
+.sidebar__text-title {
+  font-size: 16px;
+}
+
+.sidebar__text-paragraph {
+  font-size: 15px;
+}
+
+.sidebar__docs {
+  margin-bottom: 45px;
+}
+
+.sidebar__docs-item {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  margin-bottom: 30px;
+}
+
+.sidebar__docs-icon {
+  display: block;
+  margin-right: 15px;
+}
+
+.sidebar__docs-descr {
+  width: 150px;
+}
+
+.sidebar__docs-link {
+  display: block;
+  font-size: 15px;
+  margin-bottom: 5px;
+}
+
+.sidebar__docs-size {
+  font-size: 12px;
+  font-family: 'Gotham Pro', sans-serif;
+  color: $sidebarDocsSizeColor;
+}
+
+.sidebar__slider {
+  background: $primaryColor;
+  position: relative;
+  color: #fff;
+  padding-bottom: 25px;
+}
+
+.sidebar__slider-img {
+  height: 280px;
+  background-size: cover;
+  background-repeat: no-repeat;
+  position: relative;
+
+  &::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba($primaryColor, 0.3);
+  }
+}
+
+.sidebar__slider-text {
+  text-transform: uppercase;
+  padding: 25px;
+  margin-bottom: 0;
+  font-family: 'Gotham Pro', sans-serif;
+  font-weight: 500;
+}
+
+.sidebar__slider-btn {
+  @include centerY;
+  background: none;
+  border: none;
+  z-index: 10;
+
+  &--prev {
+    left: 10px;
+  }
+
+  &--next {
+    right: 10px;
+  }
+
+  svg {
+    width: 35px;
+    height: 45px;
+    fill: #fff;
+  }
+}
+
+.sidebar__slider-dots {
+  display: flex;
+  flex-wrap: wrap;
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  justify-content: center;
+  align-items: center;
+}
+
+.sidebar__slider-dots-item {
+  margin: 0 5px;
+}
+
+.sidebar__slider-dots-btn {
+  color: #fff;
+  border: none;
+  background: none;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  position: relative;
+
+  svg {
+    @include centerBoth;
+    width: 11px;
+    height: 11px;
+  }
+}
+
+@media screen and (max-width: 968px) {
+  .sidebar {
+    @include col(4);
+  }
+}
+
+@media screen and (max-width: 720px) {
+  .sidebar {
+    display: none;
+  }
+}

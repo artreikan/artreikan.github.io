@@ -1,0 +1,35 @@
+.about {
+  @include row($useMargin: false);
+  align-items: center;
+  padding: 20px 0;
+  position: relative;
+}
+
+.about__image {
+  @include fluidImage;
+}
+
+.about__descr {
+  @include col(6, $useMargin: false);
+  position: absolute;
+  right: 0;
+  background: rgba(#fff, 0.9);
+  padding: 30px;
+  box-shadow: 0 5px 20px 0 rgba(11, 14, 19, 0.08);
+  line-height: 1.4;
+}
+
+.about__paragraph:last-child {
+  margin-bottom: 0;
+}
+
+
+// media
+
+@media screen and (max-width: 720px) {
+  .about__descr {
+    position: static;
+    @include col(12, $useMargin: false);
+    padding: 20px;
+  }
+}
