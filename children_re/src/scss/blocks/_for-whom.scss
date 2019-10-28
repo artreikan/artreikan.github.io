@@ -1,0 +1,17 @@
+.for-whom__container {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  position: relative;
+  z-index: 1;
+}
+
+.for-whom__row {
+  flex-direction: column;
+}
+
+.for-whom__shape {
+  position: absolute;
+  top: -85px;
+  left: -100px;
+  z-index: -1;
+}
