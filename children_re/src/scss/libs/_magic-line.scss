@@ -1,0 +1,14 @@
+#magic-line {
+  height: 10px;
+  position: absolute;
+  top: 100%;
+  left: 0;
+  transform: translateY(-50%);
+  background: #dbd9d2;
+  border-radius: 5px;
+  display: none;
+
+  @media screen and (min-width: 768px){
+    display: block;
+  }
+}
