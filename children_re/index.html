@@ -39,6 +39,9 @@
               <li class="page-header-nav__item">
                 <a href="#" class="page-header-nav__link">Больше о слухе</a>
               </li>
+              <li class="page-header-nav__close-btn">
+                <button>&times;</button>
+              </li>
             </ul>
           </nav>
           <button type="button" class="page-header__search-btn">
@@ -239,7 +242,7 @@
               <div class="for-whom-track__icon col-md-2">
                 <img src="dist/img/phone.svg" alt="" width="50" height="61">
               </div>
-              <div class="for-whom-track__text col-md-10">
+              <div class="for-whom-track__text col-md-10 col-sm-12">
                 Вы сможете следить за настройками аппарата вашего ребенка через смартфон
               </div>
             </div>
@@ -413,39 +416,12 @@
         Почему происходит снижение слуха?
       </p>
       <img src="dist/img/information-shape.svg" alt="" width="292" height="211" class="information__shape">
-      <div class="row">
-        <div class="col-md-2 information-slider-controls-wrap">
+      <div class="row information__row">
+        <div class="col-md-2 col-sm-12 information-slider-controls-wrap">
           <div class="information-slider-controls">
             <button class="information-slider-controls__btn up">
               <img src="dist/img/up-arrow.svg" alt="" width="49" height="26">
             </button>
-            <!-- <ul class="information-slider-controls__dots">
-              <li class="information-slider-controls__dot active">
-                <button>
-                  <img src="dist/img/info-slider-icon-1.svg" alt="" width="25" height="29">
-                </button>
-              </li>
-              <li class="information-slider-controls__dot">
-                <button>
-                  <img src="dist/img/info-slider-icon-2.svg" alt="" width="25" height="29">
-                </button>
-              </li>
-              <li class="information-slider-controls__dot">
-                <button>
-                  <img src="dist/img/info-slider-icon-3.svg" alt="" width="25" height="29">
-                </button>
-              </li>
-              <li class="information-slider-controls__dot">
-                <button>
-                  <img src="dist/img/info-slider-icon-4.svg" alt="" width="25" height="29">
-                </button>
-              </li>
-              <li class="information-slider-controls__dot">
-                <button>
-                  <img src="dist/img/info-slider-icon-5.svg" alt="" width="25" height="29">
-                </button>
-              </li>
-            </ul> -->
             <button class="information-slider-controls__btn down">
               <img src="dist/img/up-arrow.svg" alt="" width="49" height="26">
             </button>
@@ -454,33 +430,458 @@
             <div class="information-slider-range__thumb"></div>
           </div>
         </div>
-        <div class="col-md-10">
+        <div class="col-md-10 col-sm-12">
           <div class="information-slider-wrap">
             <div class="information-slider-counter">
-              <span class="information-slider-counter__current">
-                2
-              </span>
-              /
-              <span class="information-slider-counter__total">
-                5
-              </span>
+              <span class="information-slider-counter__current">2</span>/<span
+                class="information-slider-counter__total">5</span>
             </div>
             <h3 class="information-slider-title">
               Степени снижения слуха
             </h3>
             <div class="information-slider">
-              <div class="information-slider__item">1</div>
-              <div class="information-slider__item">2</div>
-              <div class="information-slider__item">3</div>
-              <div class="information-slider__item">4</div>
-              <div class="information-slider__item">5</div>
+              <div class="information-slider-content">
+                <div class="row">
+                  <div class="col-md-6 information-slider-content__item">
+                    <div class="information-slider-content__icon">
+                      <img src="dist/img/wave-1.svg" alt="" width="60" height="12">
+                    </div>
+                    <h3 class="information-slider-content__title">
+                      Слабая
+                    </h3>
+                    <div class="information-slider-content-question">
+                      <img src="dist/img/play.svg" alt="" width="29" height="36"
+                        class="information-slider-content-question__icon">
+                      <span class="information-slider-content-question__text">Каково это?</span>
+                    </div>
+                    <p class="information-slider-content__descr">
+                      Вам тяжело понимать и разбирать негромкую речь, речь на росстоянии, или речь на фоне окружающего
+                      шума.
+                    </p>
+                    <a href="#!" class="btn information-slider-content__btn">
+                      <span class="btn__text">Узнайте больше</span>
+                      <img src="dist/img/arrow-thin.svg" alt="" class="btn__icon" width="22" height="13">
+                    </a>
+                  </div>
+                  <div class="col-md-6 information-slider-content__item">
+                    <div class="information-slider-content__icon">
+                      <img src="dist/img/wave-2.svg" alt="" width="60" height="12">
+                    </div>
+                    <h3 class="information-slider-content__title">
+                      Умеренная
+                    </h3>
+                    <div class="information-slider-content-question">
+                      <img src="dist/img/play.svg" alt="" width="29" height="36"
+                        class="information-slider-content-question__icon">
+                      <span class="information-slider-content-question__text">Каково это?</span>
+                    </div>
+                    <p class="information-slider-content__descr">
+                      Вы испытываете трудности в восприяти обычной речи, даже на близких расстояниях.
+                    </p>
+                    <a href="#!" class="btn information-slider-content__btn">
+                      <span class="btn__text">Узнайте больше</span>
+                      <img src="dist/img/arrow-thin.svg" alt="" class="btn__icon" width="22" height="13">
+                    </a>
+                  </div>
+                  <div class="col-md-6 information-slider-content__item">
+                    <div class="information-slider-content__icon">
+                      <img src="dist/img/wave-3.svg" alt="" width="60" height="12">
+                    </div>
+                    <h3 class="information-slider-content__title">
+                      Тяжелая
+                    </h3>
+                    <div class="information-slider-content-question">
+                      <img src="dist/img/play.svg" alt="" width="29" height="36"
+                        class="information-slider-content-question__icon">
+                      <span class="information-slider-content-question__text">Каково это?</span>
+                    </div>
+                    <p class="information-slider-content__descr">
+                      Вы можете слушать только громкую речь или громкие окружающие звуки такие, как сирена пожарной
+                      машины или удар двери. Простая разговорная речь недоступна вам для восприятия.
+                    </p>
+                    <a href="#!" class="btn information-slider-content__btn">
+                      <span class="btn__text">Узнайте больше</span>
+                      <img src="dist/img/arrow-thin.svg" alt="" class="btn__icon" width="22" height="13">
+                    </a>
+                  </div>
+                  <div class="col-md-6 information-slider-content__item">
+                    <div class="information-slider-content__icon">
+                      <img src="dist/img/wave-4.svg" alt="" width="60" height="12">
+                    </div>
+                    <h3 class="information-slider-content__title">
+                      Глубокая
+                    </h3>
+                    <div class="information-slider-content-question">
+                      <img src="dist/img/play.svg" alt="" width="29" height="36"
+                        class="information-slider-content-question__icon">
+                      <span class="information-slider-content-question__text">Каково это?</span>
+                    </div>
+                    <p class="information-slider-content__descr">
+                      Выможете воспринимать только громкие звуки за счет вибрации.
+                    </p>
+                    <a href="#!" class="btn information-slider-content__btn">
+                      <span class="btn__text">Узнайте больше</span>
+                      <img src="dist/img/arrow-thin.svg" alt="" class="btn__icon" width="22" height="13">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="information-slider-content">
+                <div class="row">
+                  <div class="col-md-6 information-slider-content__item">
+                    <div class="information-slider-content__icon">
+                      <img src="dist/img/wave-1.svg" alt="" width="60" height="12">
+                    </div>
+                    <h3 class="information-slider-content__title">
+                      Слабая
+                    </h3>
+                    <div class="information-slider-content-question">
+                      <img src="dist/img/play.svg" alt="" width="29" height="36"
+                        class="information-slider-content-question__icon">
+                      <span class="information-slider-content-question__text">Каково это?</span>
+                    </div>
+                    <p class="information-slider-content__descr">
+                      Вам тяжело понимать и разбирать негромкую речь, речь на росстоянии, или речь на фоне окружающего
+                      шума.
+                    </p>
+                    <a href="#!" class="btn information-slider-content__btn">
+                      <span class="btn__text">Узнайте больше</span>
+                      <img src="dist/img/arrow-thin.svg" alt="" class="btn__icon" width="22" height="13">
+                    </a>
+                  </div>
+                  <div class="col-md-6 information-slider-content__item">
+                    <div class="information-slider-content__icon">
+                      <img src="dist/img/wave-2.svg" alt="" width="60" height="12">
+                    </div>
+                    <h3 class="information-slider-content__title">
+                      Умеренная
+                    </h3>
+                    <div class="information-slider-content-question">
+                      <img src="dist/img/play.svg" alt="" width="29" height="36"
+                        class="information-slider-content-question__icon">
+                      <span class="information-slider-content-question__text">Каково это?</span>
+                    </div>
+                    <p class="information-slider-content__descr">
+                      Вы испытываете трудности в восприяти обычной речи, даже на близких расстояниях.
+                    </p>
+                    <a href="#!" class="btn information-slider-content__btn">
+                      <span class="btn__text">Узнайте больше</span>
+                      <img src="dist/img/arrow-thin.svg" alt="" class="btn__icon" width="22" height="13">
+                    </a>
+                  </div>
+                  <div class="col-md-6 information-slider-content__item">
+                    <div class="information-slider-content__icon">
+                      <img src="dist/img/wave-3.svg" alt="" width="60" height="12">
+                    </div>
+                    <h3 class="information-slider-content__title">
+                      Тяжелая
+                    </h3>
+                    <div class="information-slider-content-question">
+                      <img src="dist/img/play.svg" alt="" width="29" height="36"
+                        class="information-slider-content-question__icon">
+                      <span class="information-slider-content-question__text">Каково это?</span>
+                    </div>
+                    <p class="information-slider-content__descr">
+                      Вы можете слушать только громкую речь или громкие окружающие звуки такие, как сирена пожарной
+                      машины или удар двери. Простая разговорная речь недоступна вам для восприятия.
+                    </p>
+                    <a href="#!" class="btn information-slider-content__btn">
+                      <span class="btn__text">Узнайте больше</span>
+                      <img src="dist/img/arrow-thin.svg" alt="" class="btn__icon" width="22" height="13">
+                    </a>
+                  </div>
+                  <div class="col-md-6 information-slider-content__item">
+                    <div class="information-slider-content__icon">
+                      <img src="dist/img/wave-4.svg" alt="" width="60" height="12">
+                    </div>
+                    <h3 class="information-slider-content__title">
+                      Глубокая
+                    </h3>
+                    <div class="information-slider-content-question">
+                      <img src="dist/img/play.svg" alt="" width="29" height="36"
+                        class="information-slider-content-question__icon">
+                      <span class="information-slider-content-question__text">Каково это?</span>
+                    </div>
+                    <p class="information-slider-content__descr">
+                      Выможете воспринимать только громкие звуки за счет вибрации.
+                    </p>
+                    <a href="#!" class="btn information-slider-content__btn">
+                      <span class="btn__text">Узнайте больше</span>
+                      <img src="dist/img/arrow-thin.svg" alt="" class="btn__icon" width="22" height="13">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="information-slider-content">
+                <div class="row">
+                  <div class="col-md-6 information-slider-content__item">
+                    <div class="information-slider-content__icon">
+                      <img src="dist/img/wave-1.svg" alt="" width="60" height="12">
+                    </div>
+                    <h3 class="information-slider-content__title">
+                      Слабая
+                    </h3>
+                    <div class="information-slider-content-question">
+                      <img src="dist/img/play.svg" alt="" width="29" height="36"
+                        class="information-slider-content-question__icon">
+                      <span class="information-slider-content-question__text">Каково это?</span>
+                    </div>
+                    <p class="information-slider-content__descr">
+                      Вам тяжело понимать и разбирать негромкую речь, речь на росстоянии, или речь на фоне окружающего
+                      шума.
+                    </p>
+                    <a href="#!" class="btn information-slider-content__btn">
+                      <span class="btn__text">Узнайте больше</span>
+                      <img src="dist/img/arrow-thin.svg" alt="" class="btn__icon" width="22" height="13">
+                    </a>
+                  </div>
+                  <div class="col-md-6 information-slider-content__item">
+                    <div class="information-slider-content__icon">
+                      <img src="dist/img/wave-2.svg" alt="" width="60" height="12">
+                    </div>
+                    <h3 class="information-slider-content__title">
+                      Умеренная
+                    </h3>
+                    <div class="information-slider-content-question">
+                      <img src="dist/img/play.svg" alt="" width="29" height="36"
+                        class="information-slider-content-question__icon">
+                      <span class="information-slider-content-question__text">Каково это?</span>
+                    </div>
+                    <p class="information-slider-content__descr">
+                      Вы испытываете трудности в восприяти обычной речи, даже на близких расстояниях.
+                    </p>
+                    <a href="#!" class="btn information-slider-content__btn">
+                      <span class="btn__text">Узнайте больше</span>
+                      <img src="dist/img/arrow-thin.svg" alt="" class="btn__icon" width="22" height="13">
+                    </a>
+                  </div>
+                  <div class="col-md-6 information-slider-content__item">
+                    <div class="information-slider-content__icon">
+                      <img src="dist/img/wave-3.svg" alt="" width="60" height="12">
+                    </div>
+                    <h3 class="information-slider-content__title">
+                      Тяжелая
+                    </h3>
+                    <div class="information-slider-content-question">
+                      <img src="dist/img/play.svg" alt="" width="29" height="36"
+                        class="information-slider-content-question__icon">
+                      <span class="information-slider-content-question__text">Каково это?</span>
+                    </div>
+                    <p class="information-slider-content__descr">
+                      Вы можете слушать только громкую речь или громкие окружающие звуки такие, как сирена пожарной
+                      машины или удар двери. Простая разговорная речь недоступна вам для восприятия.
+                    </p>
+                    <a href="#!" class="btn information-slider-content__btn">
+                      <span class="btn__text">Узнайте больше</span>
+                      <img src="dist/img/arrow-thin.svg" alt="" class="btn__icon" width="22" height="13">
+                    </a>
+                  </div>
+                  <div class="col-md-6 information-slider-content__item">
+                    <div class="information-slider-content__icon">
+                      <img src="dist/img/wave-4.svg" alt="" width="60" height="12">
+                    </div>
+                    <h3 class="information-slider-content__title">
+                      Глубокая
+                    </h3>
+                    <div class="information-slider-content-question">
+                      <img src="dist/img/play.svg" alt="" width="29" height="36"
+                        class="information-slider-content-question__icon">
+                      <span class="information-slider-content-question__text">Каково это?</span>
+                    </div>
+                    <p class="information-slider-content__descr">
+                      Выможете воспринимать только громкие звуки за счет вибрации.
+                    </p>
+                    <a href="#!" class="btn information-slider-content__btn">
+                      <span class="btn__text">Узнайте больше</span>
+                      <img src="dist/img/arrow-thin.svg" alt="" class="btn__icon" width="22" height="13">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="information-slider-content">
+                <div class="row">
+                  <div class="col-md-6 information-slider-content__item">
+                    <div class="information-slider-content__icon">
+                      <img src="dist/img/wave-1.svg" alt="" width="60" height="12">
+                    </div>
+                    <h3 class="information-slider-content__title">
+                      Слабая
+                    </h3>
+                    <div class="information-slider-content-question">
+                      <img src="dist/img/play.svg" alt="" width="29" height="36"
+                        class="information-slider-content-question__icon">
+                      <span class="information-slider-content-question__text">Каково это?</span>
+                    </div>
+                    <p class="information-slider-content__descr">
+                      Вам тяжело понимать и разбирать негромкую речь, речь на росстоянии, или речь на фоне окружающего
+                      шума.
+                    </p>
+                    <a href="#!" class="btn information-slider-content__btn">
+                      <span class="btn__text">Узнайте больше</span>
+                      <img src="dist/img/arrow-thin.svg" alt="" class="btn__icon" width="22" height="13">
+                    </a>
+                  </div>
+                  <div class="col-md-6 information-slider-content__item">
+                    <div class="information-slider-content__icon">
+                      <img src="dist/img/wave-2.svg" alt="" width="60" height="12">
+                    </div>
+                    <h3 class="information-slider-content__title">
+                      Умеренная
+                    </h3>
+                    <div class="information-slider-content-question">
+                      <img src="dist/img/play.svg" alt="" width="29" height="36"
+                        class="information-slider-content-question__icon">
+                      <span class="information-slider-content-question__text">Каково это?</span>
+                    </div>
+                    <p class="information-slider-content__descr">
+                      Вы испытываете трудности в восприяти обычной речи, даже на близких расстояниях.
+                    </p>
+                    <a href="#!" class="btn information-slider-content__btn">
+                      <span class="btn__text">Узнайте больше</span>
+                      <img src="dist/img/arrow-thin.svg" alt="" class="btn__icon" width="22" height="13">
+                    </a>
+                  </div>
+                  <div class="col-md-6 information-slider-content__item">
+                    <div class="information-slider-content__icon">
+                      <img src="dist/img/wave-3.svg" alt="" width="60" height="12">
+                    </div>
+                    <h3 class="information-slider-content__title">
+                      Тяжелая
+                    </h3>
+                    <div class="information-slider-content-question">
+                      <img src="dist/img/play.svg" alt="" width="29" height="36"
+                        class="information-slider-content-question__icon">
+                      <span class="information-slider-content-question__text">Каково это?</span>
+                    </div>
+                    <p class="information-slider-content__descr">
+                      Вы можете слушать только громкую речь или громкие окружающие звуки такие, как сирена пожарной
+                      машины или удар двери. Простая разговорная речь недоступна вам для восприятия.
+                    </p>
+                    <a href="#!" class="btn information-slider-content__btn">
+                      <span class="btn__text">Узнайте больше</span>
+                      <img src="dist/img/arrow-thin.svg" alt="" class="btn__icon" width="22" height="13">
+                    </a>
+                  </div>
+                  <div class="col-md-6 information-slider-content__item">
+                    <div class="information-slider-content__icon">
+                      <img src="dist/img/wave-4.svg" alt="" width="60" height="12">
+                    </div>
+                    <h3 class="information-slider-content__title">
+                      Глубокая
+                    </h3>
+                    <div class="information-slider-content-question">
+                      <img src="dist/img/play.svg" alt="" width="29" height="36"
+                        class="information-slider-content-question__icon">
+                      <span class="information-slider-content-question__text">Каково это?</span>
+                    </div>
+                    <p class="information-slider-content__descr">
+                      Выможете воспринимать только громкие звуки за счет вибрации.
+                    </p>
+                    <a href="#!" class="btn information-slider-content__btn">
+                      <span class="btn__text">Узнайте больше</span>
+                      <img src="dist/img/arrow-thin.svg" alt="" class="btn__icon" width="22" height="13">
+                    </a>
+                  </div>
+                </div>
+              </div>
+              <div class="information-slider-content">
+                <div class="row">
+                  <div class="col-md-6 information-slider-content__item">
+                    <div class="information-slider-content__icon">
+                      <img src="dist/img/wave-1.svg" alt="" width="60" height="12">
+                    </div>
+                    <h3 class="information-slider-content__title">
+                      Слабая
+                    </h3>
+                    <div class="information-slider-content-question">
+                      <img src="dist/img/play.svg" alt="" width="29" height="36"
+                        class="information-slider-content-question__icon">
+                      <span class="information-slider-content-question__text">Каково это?</span>
+                    </div>
+                    <p class="information-slider-content__descr">
+                      Вам тяжело понимать и разбирать негромкую речь, речь на росстоянии, или речь на фоне окружающего
+                      шума.
+                    </p>
+                    <a href="#!" class="btn information-slider-content__btn">
+                      <span class="btn__text">Узнайте больше</span>
+                      <img src="dist/img/arrow-thin.svg" alt="" class="btn__icon" width="22" height="13">
+                    </a>
+                  </div>
+                  <div class="col-md-6 information-slider-content__item">
+                    <div class="information-slider-content__icon">
+                      <img src="dist/img/wave-2.svg" alt="" width="60" height="12">
+                    </div>
+                    <h3 class="information-slider-content__title">
+                      Умеренная
+                    </h3>
+                    <div class="information-slider-content-question">
+                      <img src="dist/img/play.svg" alt="" width="29" height="36"
+                        class="information-slider-content-question__icon">
+                      <span class="information-slider-content-question__text">Каково это?</span>
+                    </div>
+                    <p class="information-slider-content__descr">
+                      Вы испытываете трудности в восприяти обычной речи, даже на близких расстояниях.
+                    </p>
+                    <a href="#!" class="btn information-slider-content__btn">
+                      <span class="btn__text">Узнайте больше</span>
+                      <img src="dist/img/arrow-thin.svg" alt="" class="btn__icon" width="22" height="13">
+                    </a>
+                  </div>
+                  <div class="col-md-6 information-slider-content__item">
+                    <div class="information-slider-content__icon">
+                      <img src="dist/img/wave-3.svg" alt="" width="60" height="12">
+                    </div>
+                    <h3 class="information-slider-content__title">
+                      Тяжелая
+                    </h3>
+                    <div class="information-slider-content-question">
+                      <img src="dist/img/play.svg" alt="" width="29" height="36"
+                        class="information-slider-content-question__icon">
+                      <span class="information-slider-content-question__text">Каково это?</span>
+                    </div>
+                    <p class="information-slider-content__descr">
+                      Вы можете слушать только громкую речь или громкие окружающие звуки такие, как сирена пожарной
+                      машины или удар двери. Простая разговорная речь недоступна вам для восприятия.
+                    </p>
+                    <a href="#!" class="btn information-slider-content__btn">
+                      <span class="btn__text">Узнайте больше</span>
+                      <img src="dist/img/arrow-thin.svg" alt="" class="btn__icon" width="22" height="13">
+                    </a>
+                  </div>
+                  <div class="col-md-6 information-slider-content__item">
+                    <div class="information-slider-content__icon">
+                      <img src="dist/img/wave-4.svg" alt="" width="60" height="12">
+                    </div>
+                    <h3 class="information-slider-content__title">
+                      Глубокая
+                    </h3>
+                    <div class="information-slider-content-question">
+                      <img src="dist/img/play.svg" alt="" width="29" height="36"
+                        class="information-slider-content-question__icon">
+                      <span class="information-slider-content-question__text">Каково это?</span>
+                    </div>
+                    <p class="information-slider-content__descr">
+                      Выможете воспринимать только громкие звуки за счет вибрации.
+                    </p>
+                    <a href="#!" class="btn information-slider-content__btn">
+                      <span class="btn__text">Узнайте больше</span>
+                      <img src="dist/img/arrow-thin.svg" alt="" class="btn__icon" width="22" height="13">
+                    </a>
+                  </div>
+                </div>
+              </div>
             </div>
           </div>
         </div>
       </div>
     </div>
+    </div>
   </section>
   <!-- /.information -->
+
+  <button class="open-menu-btn btn">
+    Меню
+  </button>
 
 
   <script src="dist/js/main.js"></script>

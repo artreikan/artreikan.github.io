@@ -26,3 +26,15 @@
   display: inline-block;
   vertical-align: middle;
 }
+
+.open-menu-btn {
+  position: fixed;
+  bottom: 0;
+  right: 15px;
+  z-index: 9;
+  display: block;
+
+  @media screen and (min-width: 968px) {
+    display: none;
+  }
+}

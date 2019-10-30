@@ -16,6 +16,10 @@
   top: -85px;
   left: -100px;
   z-index: -1;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .for-whow-caption {
@@ -40,11 +44,20 @@
   &.active .for-whow__age-text {
     color: #53565a;
   }
+
+  @media screen and (max-width: 576px) {
+    padding-top: 5px;
+    padding-bottom: 5px;
+  }
 }
 
 .for-whow__age-icon {
   width: 120px;
   height: 95px;
+
+  @media screen and (max-width: 576px) {
+    display: none;
+  }
 }
 
 .for-whow__age-text {
@@ -100,6 +113,11 @@
   color: #53565a;
   text-transform: uppercase;
   font-weight: 600;
+
+  @media screen and (max-width: 480px){
+    font-size: 25px;
+    line-height: 1;
+  }
 }
 
 .for-whom-afraid__lists {
@@ -143,6 +161,12 @@
   box-shadow: 2px 2px 0px 0px $primaryColorDark,
     0px 0px 0px 20px rgba(255, 255, 255, 1);
 
+  @media screen and (max-width: 576px) {
+    box-shadow: 2px 2px 0px 0px $primaryColorDark;
+    padding: 5px;
+    font-size: 16px;
+  }
+
   .btn__text {
     margin-right: 5px;
   }
@@ -180,6 +204,10 @@
 
 .for-whom-track__icon {
   text-align: right;
+
+  @media screen and (max-width: 768px) {
+    text-align: left;
+  }
 }
 
 .for-whom-track__text {
@@ -187,4 +215,8 @@
   line-height: 21px;
   color: $primaryColor;
   font-weight: 300;
+  
+  @media screen and (max-width: 576px) {
+    margin-top: 10px;
+  }
 }

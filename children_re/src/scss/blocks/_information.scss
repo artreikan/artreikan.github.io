@@ -7,6 +7,10 @@
 
 .information__description {
   margin-bottom: 150px;
+
+  @media screen and (max-width: 768px) {
+    margin-bottom: 0px;
+  }
 }
 
 .information__shape {
@@ -14,12 +18,20 @@
   top: 125px;
   right: -80px;
   z-index: -1;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .information-slider-controls-wrap {
   display: flex;
   justify-content: center;
   align-items: center;
+
+  @media screen and (max-width: 768px) {
+    order: 1;
+  }
 }
 
 .information-slider-controls {
@@ -33,6 +45,10 @@
   border: none;
   background: transparent;
   @include centerX();
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .information-slider-controls__btn.up {
@@ -53,6 +69,8 @@
   margin-bottom: 25px;
   padding-left: 0;
   text-align: center;
+  display: flex;
+  flex-direction: column;
 
   button {
     width: 50px;
@@ -71,6 +89,23 @@
       box-shadow: none;
     }
   }
+
+  @media screen and (max-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 0px;
+    margin-bottom: 0px;
+
+    li:not(:last-child) {
+      margin-bottom: 0;
+    }
+
+    li {
+      margin-left: 10px;
+      margin-right: 10px;
+    }
+  }
 }
 
 .information-slider-range {
@@ -80,6 +115,10 @@
   bottom: 0;
   right: 15px;
   background: #b6ada5;
+
+  @media screen and (max-width: 768px) {
+    display: none;
+  }
 }
 
 .information-slider-range__thumb {
@@ -90,4 +129,56 @@
   border-radius: 50%;
   background: #b6ada5;
   transition: top $duration;
+}
+
+.information-slider-wrap {
+  padding-top: 30px;
+}
+
+.information-slider-counter {
+  font-size: 21px;
+  font-weight: 300;
+}
+
+.information-slider-counter__current {
+  color: $primaryColor;
+}
+
+.information-slider-title {
+  font-size: 35px;
+  font-weight: 300;
+  color: $primaryColor;
+  line-height: 1;
+  margin-bottom: 30px;
+}
+
+.information-slider-content__item {
+  margin-bottom: 30px;
+}
+
+.information-slider-content__title {
+  font-weight: 300;
+  font-size: 25px;
+  color: $primaryColor;
+}
+
+.information-slider-content-question {
+  margin-bottom: 10px;
+}
+
+.information-slider-content-question__icon {
+  margin-right: 5px;
+}
+
+.information-slider-content-question__text {
+  color: #b2a8a2;
+}
+
+.information-slider-content__descr {
+  color: #53565a;
+  margin-bottom: 10px;
+}
+
+.information-slider-content__btn {
+  padding: 10px;
 }
